@@ -62,7 +62,7 @@ Stying Navigation
  nav ul a:link,
  nav ul a:visited{
      background-color: orange;
-/* horizontal vertical biur spread color */
+/* horizontal vertical blur spread color */
      box-shadow: -2px 2px 4px 2px black;
  }
 
@@ -72,7 +72,7 @@ Stying Navigation
  }
 
  nav ul a:active{
-    /* horizontal vertical biur spread color */
+    /* horizontal vertical blur spread color */
     box-shadow: 0 0 4px 2px black; 
  }
  /* Position related Pseudo class selectors */

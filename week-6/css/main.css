@@ -1,7 +1,68 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------------
+     Style
+-----------------------------*/
+
 /* Command + / to add a comment block */
+
+html{
+    font-size: 16px;
+}
+
 body{
     color: darkslategray;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/white_brick_wall.png");
+/* background-repeat: none; */
+    /* x-axis y-axis */
 }
 /* cascading */
 h1{
@@ -23,7 +84,10 @@ nav ul{
 /* descendant selector - multiple levels */
 nav ul a{
    color: darkslategray;
-   text-decoration: none; 
+   text-decoration: none;
+   /* rem is root element to apply  */
+   font-size: 1.5rem;
+    /*1.5 x 16px = 24px */
 }
 
 /* class name selector */
@@ -34,11 +98,26 @@ text-decoration: none;
 }
 /* id selector */
 #treatofweek{
-background-color: orange
+/* background-color: orange */
+background:rgb(5, 40, 46) url("../images/bread.jpg") no-repeat center center;
+background-size: cover;
+color:#fff;
+font-size: 1.5rem;
+/* 1.5 x 16px = 24px */
+padding: 1em;
+width: 50%;
 }
+
+/* overwriting the background-color for nth-child list items */
+/* 0113 */
+#treatofweek dl ul li:nth-child(n){
+    background-color: transparent;
+}
+
 /* Avoid using id for styling use class mostly */
 .large-text{
     font-size: 20px;
+
 }
 /* Child selector or Direct Child selector */
 article > p{
@@ -96,24 +175,26 @@ Stying Navigation
  n=0, 1,2,3,4,5...
  even = 2n = 0, 2, 4, 6, 8...
  odd = 2n+1 =1, 3 5, 7, 9... */
- dl ul li:nth-child(3) {
+ dl ul li:nth-child(2n+1) {
      background-color: white;
  }
  /* CSS Specificity */
  /* specificity: 0001 */
  footer{
-     background-color:#d5836c;
+     background-color:cornflowerblue;
      padding: 20px;
  }
   /* specificity: 0002 */
   body footer{
       background-color: rgb(55, 6, 180);
   }
-
+ 
+      
   /* 0010 */
   .site-footer{
       background-color: cornflowerblue;
-  }
+  } 
+      
   
   /* 0011 */
   footer .site-footer{

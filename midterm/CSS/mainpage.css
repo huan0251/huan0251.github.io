@@ -68,10 +68,9 @@ figcaption{
 	color: #fff;
 	position: absolute;
 	top: 60%;
-	left: 30%;
 	width: 100%;
-	xtext-align: center;
-	
+	margin: 0 auto;
+	text-align: center;	
   }
 
 .main-container{

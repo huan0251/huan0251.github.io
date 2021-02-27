@@ -82,20 +82,12 @@ figcaption{
 	max-width: 1024px;
 	margin: 0 auto;
 }
-
-/* nav ul li{
-	display: inline-block;
-	width: 32%;
-	font-size: 1.5rem;
-	text-align: center; */
-} 
+ 
 	
 #nav{
 	position: absolute;
     left: 0px;
-    height: 20px;
 	width: 100%;
-    xtext-align: center;
 	margin: 0 auto;
 	
 }

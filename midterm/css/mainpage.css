@@ -92,6 +92,7 @@ figcaption{
 	width: 70%;
 	max-width: 1024px;
 	margin: 0 auto;
+	margin-bottom: 10px;
 }
 /* Article style */
 .article-container{
@@ -134,7 +135,14 @@ figcaption{
 	margin: 0 auto;
 	padding: 2px;
 	clear: left;
-} 
+}
+ /* Image size and position */
+ #lonestarfish{
+	width: 250px;
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
 /* Change bullet style */
 ul {
 	list-style: disc;

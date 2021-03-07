@@ -45,7 +45,7 @@ table {
 /* -------------------------
     Mainpage Style
 -----------------------------*/
-/* defult style */
+/* defult style and Header style */
 html{
     font-size: 16px;
 	background-color: #aad4cf;}
@@ -84,7 +84,7 @@ figcaption{
 	margin: 0 auto;
 	text-align: center;	
   }
-/* Body style */
+/* Body Style */
   .main-container{
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
@@ -94,7 +94,7 @@ figcaption{
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
-/* Article style */
+/* Article Style */
 .article-container{
 	padding: 15px;
 }

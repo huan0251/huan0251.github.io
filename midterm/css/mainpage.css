@@ -45,76 +45,10 @@ table {
 /* -------------------------
     Mainpage Style
 -----------------------------*/
+/* defult style */
 html{
     font-size: 16px;
-    background-color: #aad4cf;}
-
-.wide-container{
-	position: relative;
-	margin: 0 auto;
-}
-.wide-container img{
-	max-width: 100%;
-}
-.bannertext{
-	position: relative;
-	margin: 0 auto;
-}
-figcaption{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 4rem;
-	background:none;
-	color: #fff;
-	position: absolute;
-	top: 60%;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;	
-  }
-.body-container{
-	padding: 15px;
-}
-.main-container{
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-	background-color: rgba(255,255,255, .50);
-	width: 70%;
-	max-width: 1024px;
-	margin: 0 auto;
-}
- 
-	
-#nav{
-	position: absolute;
-    left: 0px;
-	width: 100%;
-	margin: 0 auto;
-	
-}
-#nav ul {
-	list-style:none;
-	margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-#nav ul li{
-	display:inline-block; 
-	padding-top: 15px;
-	position:relative;
-	font-size: 1.5rem;
-	width: 300px;
-	height: 30px;
-  }
-#nav ul li:not(:last-child)::after{
-	content:""; 
-	border:1px solid #272525;
-	border-width: 1px 1px 0 0;
-	position:absolute; 
-	right:-3px; 
-	top:0; 
-	height:100%;
-  } 
-
+	background-color: #aad4cf;}
 h2 {
 	font-size: 2.2rem;
 	padding-top: 5%;
@@ -130,32 +64,90 @@ h4 {
 	padding-top: 6px;
 	padding-bottom: 20px;
 }
-
-ul {
-	list-style: disc;
-	margin-left: 20px;
+/* Header image size and position */
+.wide-container{
+	position: relative;
+	margin: 0 auto;
 }
-
+.wide-container img{
+	max-width: 100%;
+}
+/* Site title style and position */
+figcaption{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4rem;
+	background:none;
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;	
+  }
+/* Body style */
+  .main-container{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: rgba(255,255,255, .50);
+	width: 70%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+/* Article style */
+.article-container{
+	padding: 15px;
+}
+/* Navigation bar style and position*/
+#nav{
+	position: absolute;
+    left: 0px;
+	width: 100%;
+	margin: 0 auto;	
+}
+#nav ul {
+	list-style:none;
+	margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#nav ul li{
+	display:inline-block; 
+	padding-top: 15px;
+	position:relative;
+	font-size: 1.5rem;
+	width: 300px;
+	height: 30px;
+}
+/* The vertical line between navigations */
+#nav ul li:not(:last-child)::after{
+	content:""; 
+	border:1px solid #272525;
+	border-width: 1px 1px 0 0;
+	position:absolute; 
+	right:-3px; 
+	top:0; 
+	height:100%;
+}
+/* Image have the text wrapping around it */
 .imgparagraph{
 	width: 100%;
 	margin: 0 auto;
 	padding: 2px;
 	clear: left;
-	}
-#lonestarfish{
-  width: 250px;
-  float: left;
-  padding-right: 15px;
-  padding-bottom: 15px;
+} 
+/* Change bullet style */
+ul {
+	list-style: disc;
+	margin-left: 20px;
 }
-
+/* Form style */
 .form{
 	box-sizing: border-box;
 	border: 1px solid black;
 	padding: 20px;
 	padding-top: 30px;	
 }
-
+/*  Styling input fields */
 .contact input, textarea{
 	width: 100%;
 	clear: left;
@@ -169,6 +161,7 @@ ul {
 .contact textarea{
 	height: 80px;
 }
+/* Button style */
 button{
 	font-size: 0.6rem;
 	background-color: rgba(255,255,255, .0);
@@ -176,6 +169,7 @@ button{
 	margin-top: 15px;
 	border: solid 1px;
 }
+/* Footer position */
 footer{
 	text-align: end;
 	padding:3%;

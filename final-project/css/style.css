@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------CSS RESET ---------*/
+
+/* Custom CSS */
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    color:#222;
+}
+body{
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4{
+    font-weight: bold;
+    /* top left-right bottom */
+    margin: 1rem 0 0.5rem;
+}
+
+h1{
+    font-size: 5.063rem;
+}
+h2{
+    font-size: 3.375rem;
+}
+h3{
+    font-size: 2.25rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+p{
+    margin: 1rem 0;
+}
+
+.page{
+    background-color: #fff;
+}
+
+/* --------Header Nav-------- */
+.logo{
+    display:block;
+    padding:1rem;
+}
+
+.header-nav{
+    background-color: #222;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.nav-list a:link{
+    text-decoration: none;
+    /* top right bottom left */
+    padding:1rem 3rem 1rem 3rem;
+    display: block;
+}
+.nav-list {
+    text-align: center;
+    display:inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.nav-list li {
+    color: #c78c06;
+    /* float: left; */
+}
+.nav-list li a{
+    color: #c78c06;
+}
+.nav-list li a:hover{
+    background-color:  #c78c06;
+    color:#222;
+    display: block;
+    /* color: #222; */
+}
+.nav-list .current{
+    background-color: #c78c06;
+    color:#222;
+}
+.serch{
+    display: block;
+    margin-left: 1rem;
+}
+
+/* ------Main banner------ */
+
+.main-banner{
+    position: relative;
+    margin: 0 auto;
+}
+.main-banner img{
+    max-width: 70%;
+    /* position: relative; */
+}
+figcaption{
+    /* padding-top: 100px; */
+    background: rgba(34,2,0, .70);
+    position: absolute;
+    top:12%;
+    max-width:70%;
+    bottom:12%;
+    margin: 0 auto;
+}
+
+.welcome h1 {
+    color:#fff;
+    padding-top: 50px;
+}
+.welcome p {
+    color:#fff;
+    padding-top: 1px;
+}
+.main-banner .welcom a:link{
+    border: solid 1px #222;
+}
+.w-btn {
+    font-size: 1.5rem;
+    background-color: #c78c06;
+    border: none;
+    padding: 30px;
+}
+.fa-play{
+    padding: 10px;
+}
+
+/* --------Main Content-------- */
+/* About Us */
+.about-container{
+    background-color: #ffe6ac;
+}
+
+/* ------Our Services------ */
+.s-topic h2{
+    margin-top: 40px;
+}
+.service{
+    background-color: #ffe6ac;
+}
+.service img{
+    min-width: 100%;
+}
+.s-btn{
+    color:#fff;
+    font-size: 1.5rem;
+    background-color: #222;
+    border: none;
+    padding: 30px 30px 30px 40px;
+}
+
+.info{
+    margin-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}
+/* ------Our Vision------ */
+.vision h3{
+    color: #fff;
+}
+.vision p{
+    color: #fff;
+}
+.v-btn{
+    color:#fff;
+    font-size: 1.5rem;
+    background-color: #222;
+    border: solid 1px #c78c06;
+    padding: 30px 30px 30px 40px;
+}
+.vision-container{
+    position:relative;
+    margin-top: 30px;
+}
+.vision{
+    background:none;
+    position: absolute;
+    top:12%;
+    bottom:12%;
+    margin: 0 auto;
+    padding:12px;
+}
+.vision-container img{
+    max-width: 100%;
+    max-height: 50%;
+}
+
+/* ------Our team------ */
+
+.t-topic h2{
+    margin-top: 40px;
+}
+.team{
+    background-color: #ffe6ac;
+    
+}
+.team img{
+    min-width: 100%;
+}
+.team-text{
+    margin-left:20px ;
+}
+
+/* --------Footer-------- */
+
+footer{
+    background-color: #222;
+    color: #c78c06;
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+}
+footer ul li a{
+    text-decoration: bottom;
+    color:#c78c06;
+}

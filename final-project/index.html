@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/76c0d9b078.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">    
+
     <title>Final Project</title>
 </head>
 <body>
@@ -13,34 +16,40 @@
 <!---------------------- Header ---------------------->
         <header class="header-container">
             <nav class="header-nav">
-                <img src="./img/logo.png" alt="logo">
+                <img src="./img/logo.png" alt="logo" class="logo">
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="current">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>  
                 </ul>
-                <input type="text" placeholder="Search">
-                <button type="button"><i class="fa fa-search"></i></button>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button type="button"><i class="fa fa-search"></i></button>
+                </div>      
             </nav>
-            <div class="header-banner">
-                <img src="./img/main-banner.jpg" alt="main banner">
-                <div class="welcome">
-                    <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi excepturi maxime, voluptate libero eligendi assumenda corrupti ipsam est corporis dolor quisquam blanditiis, praesentium ea neque nulla cumque repellat officiis natus.</p>
-                    <a href="#" class="w-btn" target="_blank">Connecct with us <i class="fas fa-play"></i></a>
-                </div>
-                
-            </div>
         </header>
+<!-- ------------Main banner------------ -->
+            <div class="main-banner">
+                <figure>
+                    <img src="./img/main-banner.jpg" alt="main banner">
+                    <figcaption class="welcome">
+                       <h1>Welcome to Three Star Media</h1>
+                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi excepturi maxime, voluptate libero eligendi assumenda corrupti ipsam est corporis dolor quisquam blanditiis, praesentium ea neque nulla cumque repellat officiis natus.</p>
+                       <button class="w-btn">Connecct with us  <i class="fas fa-play"></i> </button>
+                    </figcaption>
+                </figure>
+            </div>
+
 <!---------------------- Main Content ---------------------->
         <main class="main-container">
             <section class="about-container">
                 <img src="./img/about-us.jpg" alt="about us">
                 <div>
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos assumenda, ex totam quas necessitatibus ullam quos exercitationem nesciunt vitae laborum obcaecati deleniti? Temporibus est sit fugit! Tempora consequuntur voluptatibus veritatis ipsam corrupti dolore sequi ut debitis perferendis voluptate voluptatem, a dicta, quaerat laboriosam libero quos? Unde tempora quisquam nihil, adipisci consequuntur rem iusto deleniti. Voluptatem, pariatur! Neque, rem omnis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illo ipsam labore laboriosam architecto doloremque repellendus optio atque, provident voluptatem assumenda exercitationem sequi odit quae cumque rerum molestiae omnis natus voluptate! Nihil, iusto quod nemo assumenda fuga sint. Recusandae, possimus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quaerat provident a, commodi ullam, totam delectus sapiente similique quod cum animi sunt eos corrupti doloremque nisi. Inventore tenetur eos mollitia culpa sit ipsam odit dignissimos animi aliquam, facere unde non!</p>
                 </div>
             </section>
             
@@ -54,7 +63,7 @@
                     <div class="info">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem vero id itaque, alias odio eos neque libero. Placeat ut et a ipsam odio possimus ea dolore. Nisi qui alias commodi.</p>
-                        <a href="#" class="s-btn" target="_blank">Digital Plans <i class="fas fa-play"></i></a>
+                        <button class="s-btn">Digital Plans  <i class="fas fa-play"></i></button>
                     </div>
                 </div>
                 <div class="service">
@@ -62,7 +71,7 @@
                     <div class="info">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dignissimos aut ipsa consequuntur ipsum at modi aliquam accusamus odit aperiam minima corrupti voluptatum quaerat. Iste quis nam dolor. Consectetur, voluptas.</p>
-                        <a href="#" class="s-btn" target="_blank">Marketing Plans <i class="fas fa-play"></i></a>
+                        <button class="s-btn">Marketing Plans  <i class="fas fa-play"></i></button>
                     </div>
                 </div>
                 <div class="service">
@@ -70,7 +79,7 @@
                     <div class="info">
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem vero id itaque, alias odio eos neque libero. Placeat ut et a ipsam odio possimus ea dolore. Nisi qui alias commodi.</p>
-                        <a href="#" class="s-btn" target="_blank">Video Plans <i class="fas fa-play"></i></a>
+                        <button class="s-btn">Video Plans  <i class="fas fa-play"></i></button>
                     </div>
                 </div>
                 <div class="service">
@@ -78,7 +87,7 @@
                     <div class="info">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem vero id itaque, alias odio eos neque libero. Placeat ut et a ipsam odio possimus ea dolore. Nisi qui alias commodi.</p>
-                        <a href="#" class="s-btn" target="_blank">Web Plans <i class="fas fa-play"></i></a>
+                        <button class="s-btn">Web Plans  <i class="fas fa-play"></i></button>
                     </div>
                 </div>
                 <div class="service">
@@ -86,36 +95,39 @@
                     <div class="info">
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem vero id itaque, alias odio eos neque libero. Placeat ut et a ipsam odio possimus ea dolore. Nisi qui alias commodi.</p>
-                        <a href="#" class="s-btn" target="_blank">Print Plans <i class="fas fa-play"></i></a>
+                        <button class="s-btn">Print Plans  <i class="fas fa-play"></i></button>
                     </div>
                 </div>
             </section>
+<!----------- Our Vision ----------->
             <section class="vision-container">
                 <img src="./img/vision.jpg" alt="our vision">
                 <div class="vision">
-                    <h2>Our Vision</h2>
+                    <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veritatis distinctio laboriosam vitae magni voluptas ipsum, non aspernatur reprehenderit illum tempore ducimus voluptatem eos dolor cupiditate omnis harum enim temporibus?</p>
-                    <a href="#" class="v-btn" target="_blank">Learn More <i class="fas fa-play"></i></a>
+                    <button class="v-btn">Learn More  <i class="fas fa-play"></i></button>
                 </div>
             </section>
-            
+<!----------- Our Team ----------->            
             <section class="team-container">
                 <div class="t-topic">
                     <h2>Our Team</h2>
                 </div>
                 <div class="team">
                     <img src="./img/john.jpg" alt="john">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquid quisquam ab similique provident ratione harum officia sequi cum iste eos at repellendus ad, itaque sunt inventore in enim! Commodi.</p>
+                    <div class="team-text">
+                       <h3>John Doe</h3>
+                       <h4>CEO and Co-owner</h4>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquid quisquam ab similique provident ratione harum officia sequi cum iste eos at repellendus ad, itaque sunt inventore in enim! Commodi.</p> 
+                    </div>  
                 </div>
                 <div class="team">
                     <img src="./img/bob.jpg" alt="bob">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquid quisquam ab similique provident ratione harum officia sequi cum iste eos at repellendus ad, itaque sunt inventore in enim! Commodi.</p>
+                    <div class="team-text">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquid quisquam ab similique provident ratione harum officia sequi cum iste eos at repellendus ad, itaque sunt inventore in enim! Commodi.</p>
+                    </div>
                 </div>
             </section>
 
@@ -173,8 +185,8 @@
 <!---------------------- footer ---------------------->
         <footer>
             <ul>
-                <li>&copy; Copyright Three Star Media, 2020</li>
-                <li>All images are taken from <a href="https://unsplash.com/s/photos/climate-change?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></li>
+                <li> <span>&copy; Copyright Three Star Media, 2020</span> </li>
+                <li> <span>All images are taken from <a href="https://unsplash.com/s/photos/climate-change?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> </li>
             </ul>
     </footer>
     </div>  

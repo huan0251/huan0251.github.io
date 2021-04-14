@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/76c0d9b078.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Final Project</title>
 </head>
@@ -16,7 +16,9 @@
 <!---------------------- Header ---------------------->
         <header class="header-container">
             <nav class="header-nav">
-                <img src="./img/logo.png" alt="logo" class="logo">
+                <div class="logo-img">
+                    <img src="./img/logo.png" alt="logo" class="logo">
+                </div>
                 <ul class="nav-list">
                     <li><a href="#" class="current">Home</a></li>
                     <li><a href="#">About Us</a></li>
@@ -26,7 +28,7 @@
                 </ul>
                 <div class="search">
                     <input type="text" placeholder="Search">
-                    <button type="button"><i class="fa fa-search"></i></button>
+                    <button class="search-btn" type="button"><i class="fa fa-search"></i></button>
                 </div>      
             </nav>
         </header>
@@ -45,10 +47,10 @@
 <!---------------------- Main Content ---------------------->
         <main class="main-container">
             <section class="about-container">
-                <img src="./img/about-us.jpg" alt="about us">
-                <div>
+                <img class="about-img" src="./img/about-us.jpg" alt="about us">
+                <div class="about-text">
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illo ipsam labore laboriosam architecto doloremque repellendus optio atque, provident voluptatem assumenda exercitationem sequi odit quae cumque rerum molestiae omnis natus voluptate! Nihil, iusto quod nemo assumenda fuga sint. Recusandae, possimus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, earum fugiat. Excepturi nihil commodi suscipit natus facilis assumenda porro voluptate ea, amet alias? Veniam quis quo repudiandae eveniet minima iste!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quaerat provident a, commodi ullam, totam delectus sapiente similique quod cum animi sunt eos corrupti doloremque nisi. Inventore tenetur eos mollitia culpa sit ipsam odit dignissimos animi aliquam, facere unde non!</p>
                 </div>
             </section>
@@ -101,12 +103,15 @@
             </section>
 <!----------- Our Vision ----------->
             <section class="vision-container">
-                <img src="./img/vision.jpg" alt="our vision">
-                <div class="vision">
+                <figure>
+                    <img class="clip-me" src="./img/vision.jpg" alt="our vision">
+                <figcaption class="vision">
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veritatis distinctio laboriosam vitae magni voluptas ipsum, non aspernatur reprehenderit illum tempore ducimus voluptatem eos dolor cupiditate omnis harum enim temporibus?</p>
                     <button class="v-btn">Learn More  <i class="fas fa-play"></i></button>
-                </div>
+                </figcaption>
+                </figure>
+                
             </section>
 <!----------- Our Team ----------->            
             <section class="team-container">
@@ -130,35 +135,32 @@
                     </div>
                 </div>
             </section>
-
+ <!-- --------Contact US-------- -->
             <section class="contact-container">
-                <h2>Contact Us</h2>
+                <div class="c-topic">
+                    <h2>Contact Us</h2>
+                </div>
                 <div class="contactform">
                     <h3>Send us a message</h3>
                         <form action="contact.html" method="get">
                             <div class="contact">
                                 <div>
-                                    <label for="fullname">Your Name</label>
+                                    <label for="fullname">Full Name</label>
                                     <input type="text" id="fullname" name="fullname">
                                 </div>
                                 <div>
-                                    <label for="youremail">Your Email</label>
+                                    <label for="youremail">Email</label>
                                     <input type="email" id="youremail" name="youremail" required>
                                 </div>
                                 <div>
-                                    <label for="message">Your Message</label>
+                                    <label for="message">Message</label>
                                     <textarea name="message" id="message"></textarea>
                                 </div>
                             </div>
-                            <button type="submit">Send</button>
+                            <button class="c-btn" type="submit">Send</button>
                         </form>
                 </div>
-
-                <div class="location">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44864.626374263615!2d-75.79194172089844!3d45.34802199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2z5Lqe5bSX5piG5a246Zmi!5e0!3m2!1szh-TW!2sca!4v1617113974826!5m2!1szh-TW!2sca"> </iframe>
-                </div>
-
+    <!-- --------Hours-------- -->
                 <div class="hours">
                     <h3>Hours of operation</h3>
                     <table>
@@ -180,6 +182,12 @@
                         </tbody>
                     </table>
                 </div>
+ <!-- --------Location-------- -->
+                <div class="location">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d179625.30506184936!2d-75.817603!3d45.295387!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus%2C%201385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%201V8!3m2!1d45.348022!2d-75.7569228!5e0!3m2!1sen!2sca!4v1618373620793!5m2!1sen!2sca" loading="lazy"></iframe>
+                </div>
+                
             </section>
         </main>
 <!---------------------- footer ---------------------->

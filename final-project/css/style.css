@@ -81,21 +81,38 @@ h4{
 p{
     margin: 1rem 0;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .page{
     background-color: #fff;
+    padding:1%;
 }
 
 /* --------Header Nav-------- */
 .logo{
     display:block;
-    padding:1rem;
+    margin-left:1rem;
+    margin-top:1rem;
 }
-
+.logo-img{
+    background-color: #c78c06;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: flex;
+}
+.header-container{
+    width:100%;
+}
 .header-nav{
     background-color: #222;
     font-size: 1.5rem;
     display: inline-block;
+    width:100%;
 }
 
 .nav-list a:link{
@@ -106,30 +123,44 @@ p{
 }
 .nav-list {
     text-align: center;
-    display:inline-block;
     margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 1rem; 
 }
 .nav-list li {
     color: #c78c06;
-    /* float: left; */
 }
-.nav-list li a{
+.nav-list a{
     color: #c78c06;
+    display:block;
 }
 .nav-list li a:hover{
     background-color:  #c78c06;
     color:#222;
     display: block;
-    /* color: #222; */
 }
 .nav-list .current{
     background-color: #c78c06;
     color:#222;
 }
+/* Search bar */
 .serch{
     display: block;
-    margin-left: 1rem;
+    /* margin-left: 10px; */
+}
+.search input {
+    width: 88%;
+    height:40px;
+    display:inline-block;
+    margin: 15px 0 15px 15px;
+    font-size: 1.5rem;
+}
+.search-btn{
+    background-color: #222;
+    border: 1px solid #c78c06;
+    color: #c78c06;
+    font-size: 2rem;
+    padding: 5px 8px 7px 8px;
+    margin-left: 0;
 }
 
 /* ------Main banner------ */
@@ -139,26 +170,27 @@ p{
     margin: 0 auto;
 }
 .main-banner img{
-    max-width: 70%;
-    /* position: relative; */
+    max-width: 100%;
 }
 figcaption{
-    /* padding-top: 100px; */
-    background: rgba(34,2,0, .70);
+    background: rgba(0,0,0, .70);
     position: absolute;
     top:12%;
-    max-width:70%;
+    width:100%;
+    /* max-width:70%; */
     bottom:12%;
     margin: 0 auto;
 }
 
 .welcome h1 {
     color:#fff;
-    padding-top: 50px;
+    padding-top: 5px;
+    padding-left: 10px;
+    line-height: 98px;
 }
 .welcome p {
     color:#fff;
-    padding-top: 1px;
+    padding-left: 10px;
 }
 .main-banner .welcom a:link{
     border: solid 1px #222;
@@ -168,6 +200,7 @@ figcaption{
     background-color: #c78c06;
     border: none;
     padding: 30px;
+    margin-left: 10px;
 }
 .fa-play{
     padding: 10px;
@@ -177,8 +210,17 @@ figcaption{
 /* About Us */
 .about-container{
     background-color: #ffe6ac;
+    padding:15px;
+    margin:0 ;
+}
+.about-img {
+    max-width:100%;
+    display:inline-block;
 }
 
+.about-text{
+    padding: 0 8px 10px 8px;
+}
 /* ------Our Services------ */
 .s-topic h2{
     margin-top: 40px;
@@ -220,7 +262,7 @@ figcaption{
     position:relative;
     margin-top: 30px;
 }
-.vision{
+.vision {
     background:none;
     position: absolute;
     top:12%;
@@ -228,15 +270,18 @@ figcaption{
     margin: 0 auto;
     padding:12px;
 }
-.vision-container img{
+ .vision-container img{
     max-width: 100%;
-    max-height: 50%;
+    /* max-height: 50%; */
+}
+.clip-me{
+    clip-path: inset(10% 0% 40% 0%);
 }
 
 /* ------Our team------ */
 
 .t-topic h2{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .team{
     background-color: #ffe6ac;
@@ -247,6 +292,76 @@ figcaption{
 }
 .team-text{
     margin-left:20px ;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+/* hr{
+    border: 1px solid brown;
+    margin-right: 12px; */
+}
+/* .team .team-text p{
+    border-top: 2px solid brown;
+} */
+
+/* --------Contact Us-------- */
+.contact-container .c-topic h2{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+.contactform{
+    box-sizing: border-box;
+	border: none;
+	padding: 20px;
+	padding-top: 10px;	
+}
+/*  Styling input fields */
+.contact input, textarea{
+	width: 100%;
+	clear: left;
+	box-sizing: inherit;
+}
+.contact input{
+	height: 25px;
+}
+.contact textarea{
+	height: 150px;
+}
+.c-btn{
+    color:#c78c06;
+    font-size: 1.5rem;
+    background-color: #222;
+    border: none;
+    padding: 6px 10px 6px 10px;
+    margin-top: 15px;
+}
+
+/* --------Hours-------- */
+table thead tr th{
+    font-size: 1.2rem;
+}
+table tbody tr td{
+    font-size: 1.2rem;
+}
+table, th, td{
+    border: 1px solid #222;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+table{
+    width: 100%;
+}
+th{
+    background-color: #ffe6ac;
+}
+
+/* --------Location-------- */
+iframe{
+    width: 100%;
+    height: 500px;
 }
 
 /* --------Footer-------- */
@@ -255,9 +370,13 @@ footer{
     background-color: #222;
     color: #c78c06;
     margin-top: 1.5rem;
-    padding: 1.5rem 0;
+    padding: 25px 0 10px 10px;
+}
+footer ul li{
+     padding:8px;
 }
 footer ul li a{
     text-decoration: bottom;
     color:#c78c06;
+   
 }

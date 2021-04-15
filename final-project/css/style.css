@@ -145,7 +145,6 @@ p{
 /* Search bar */
 .serch{
     display: block;
-    /* margin-left: 10px; */
 }
 .search input {
     width: 88%;
@@ -165,32 +164,31 @@ p{
 
 /* ------Main banner------ */
 
-.main-banner{
-    position: relative;
-    margin: 0 auto;
-}
 .main-banner img{
-    max-width: 100%;
+    display: none;
 }
-figcaption{
+.welcome{
     background: rgba(0,0,0, .70);
-    position: absolute;
     top:12%;
+    align-content: center;
     width:100%;
-    /* max-width:70%; */
     bottom:12%;
-    margin: 0 auto;
+    margin: 50px 0 50px 0;
+    padding: 20px 20px 10px 10px;
 }
-
+.banner-img{
+    background:#222 url("../img/main-banner.jpg") no-repeat center;
+    background-size: 100%;
+    height: 550px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
 .welcome h1 {
     color:#fff;
-    padding-top: 5px;
-    padding-left: 10px;
-    line-height: 98px;
 }
 .welcome p {
     color:#fff;
-    padding-left: 10px;
 }
 .main-banner .welcom a:link{
     border: solid 1px #222;
@@ -200,7 +198,6 @@ figcaption{
     background-color: #c78c06;
     border: none;
     padding: 30px;
-    margin-left: 10px;
 }
 .fa-play{
     padding: 10px;
@@ -220,12 +217,14 @@ figcaption{
 
 .about-text{
     padding: 0 8px 10px 8px;
+    width: 100%;
+    margin: 0 auto;
 }
 /* ------Our Services------ */
 .s-topic h2{
     margin-top: 40px;
 }
-.service{
+.service-1, .service-2, .service-3, .service-4, .service-5{
     background-color: #ffe6ac;
 }
 .service img{
@@ -378,5 +377,128 @@ footer ul li{
 footer ul li a{
     text-decoration: bottom;
     color:#c78c06;
-   
+}
+
+/* -----------------------Desktop Styles---------------------- */
+
+@media screen and (min-width: 760px) and (max-width: 1200px){ 
+    html{
+        font-size: 16px;
+    }
+    /* --------DS Header Nav-------- */
+    .nav-list{
+        display:flex;
+        flex-flow:row wrap;
+        margin: none;
+    }
+    .nav-list li{
+        font-size: 1rem;
+    }
+    .nav-list a:link{
+        text-decoration: none;
+        /* top right bottom left */
+        padding:1rem 2rem 1rem 2rem;
+        display: inline-block;
+    }
+    .logo{
+        display:block;
+        margin:0 auto;
+    }
+    .logo-img{
+        background-color: transparent;
+        display:inline-block;
+        margin: 0 auto;
+        padding:30px 30px 30px 70px;
+    }
+
+    .search input {
+        width: auto;
+        height:30px;
+        display:inline-block;
+        margin: 15px 0 15px 15px;
+        font-size: 1rem;
+    }
+    .search-btn{
+        font-size: 1rem;
+        padding: 8px 6px 8px 6px;
+        margin-right: 20px;
+    }
+   .header-nav{
+       display: flex;
+       justify-content: center;
+       align-items:center;
+   }
+   /* --------DS Main Banner-------- */
+   .main-banner img{
+    display: none;
+   }
+   .welcome{
+    background: rgba(0,0,0, .70);
+    top:12%;
+    align-content: center;
+    width:100%;
+    bottom:12%;
+    margin: 33px 80px 33px 80px;
+    padding: 20px 20px 10px 10px;
+    }
+    /* --------DS Main Content-------- */
+    /* ----About Us---- */
+    .about-img{
+        width:45%;
+        float:left;
+        margin-right: 10px;
+    }
+    .about-container{
+        display:flex;
+        padding: 20px 100px 20px 100px;
+     
+    }
+    .about-text{
+        width: 600px;
+        margin: 0 auto;
+	    padding: 0 0 0 2px;
+	    /* float: right; */
+    }
+    .about-text h2{
+        margin-top: 0;
+    }
+
+    /* ----Our Service---- */
+    .service-container{
+        display:grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+        "topic topic topic topic topic topic"
+        "dt dt dt mk mk mk"
+        "dt dt dt mk mk mk"
+        "dt dt dt mk mk mk"
+        "dt dt dt mk mk mk"
+        "dt dt dt mk mk mk"
+        "dt dt dt mk mk mk"
+        "vp vp wd wd pt pt"
+        "vp vp wd wd pt pt"
+        "vp vp wd wd pt pt"
+        "vp vp wd wd pt pt"
+        "vp vp wd wd pt pt";
+    }
+    .s-topic{
+        grid-area: topic;
+    }
+    .service-1{
+        grid-area: dt;
+    }
+    .service-2{
+        grid-area: mk;
+    }
+    .service-3{
+        grid-area: vp;
+    }
+    .service-4{
+        grid-area: wd;
+    }
+    .service-5{
+        grid-area: pt;
+    }
+    
 }

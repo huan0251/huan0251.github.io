@@ -227,7 +227,7 @@ p{
 .service-1, .service-2, .service-3, .service-4, .service-5{
     background-color: #ffe6ac;
 }
-.service img{
+.service-1 img, .service-2 img, .service-3 img, .service-4 img, .service-5 img{
     min-width: 100%;
 }
 .s-btn{
@@ -244,6 +244,18 @@ p{
     margin-bottom: 12px;
 }
 /* ------Our Vision------ */
+.vision-container img{
+    display: none;
+}
+.vision{
+    background:#222 url("../img/vision.jpg") no-repeat center;
+    background-size: 100%;
+    height: 270px;
+    border: none;
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 30px 20px 10px 10px;
+}
 .vision h3{
     color: #fff;
 }
@@ -257,25 +269,22 @@ p{
     border: solid 1px #c78c06;
     padding: 30px 30px 30px 40px;
 }
-.vision-container{
+/* .vision-container{
     position:relative;
     margin-top: 30px;
-}
-.vision {
+} */
+/* .vision {
     background:none;
     position: absolute;
     top:12%;
     bottom:12%;
     margin: 0 auto;
     padding:12px;
-}
- .vision-container img{
-    max-width: 100%;
-    /* max-height: 50%; */
-}
-.clip-me{
+} */
+
+/* .clip-me{
     clip-path: inset(10% 0% 40% 0%);
-}
+} */
 
 /* ------Our team------ */
 
@@ -289,7 +298,7 @@ p{
 .team img{
     min-width: 100%;
 }
-.team-text{
+.team-textj, .team-textb{
     margin-left:20px ;
     padding-bottom: 20px;
     margin-bottom: 15px;
@@ -457,7 +466,6 @@ footer ul li a{
         width: 600px;
         margin: 0 auto;
 	    padding: 0 0 0 2px;
-	    /* float: right; */
     }
     .about-text h2{
         margin-top: 0;
@@ -500,5 +508,92 @@ footer ul li a{
     .service-5{
         grid-area: pt;
     }
+
+    /* ----Our Vision---- */
+    .vision{
+        padding:20px 50px 10px 80px;
+    }
+
+    /* ----Our Team---- */
+    /* .team-container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas:
+        "team team"
+        "jimg jtext"
+        "jimg jtext"
+        "jimg jtext"
+        "btext bimg"
+        "btext bimg"
+        "btext bimg";
+    }
+    .t-topic{
+        grid-area: team;
+        grid-column: 1 /span 2;
+        grid-row: 1 / span 1;
+    }
+    .john{
+        grid-area: jimg;
+        grid-column: 1 /span 1;
+        grid-row: 2 / span 1;
+        width: 50%;
+    }
+    .team-textj{
+        grid-area: jtext;
+        grid-column: 2 /span 1;
+        grid-row: 2 / span 1;
+    }
+    .bob{
+        grid-area: bimg;
+        grid-column: 2 /span 1;
+        grid-row: 3/ span 1;
+        width: 50%;
+    }
+    .team-textb{
+        grid-area: btext;
+        grid-column: 1/span 1;
+        grid-row: 3 / span 1;
+    }  */
     
+    .team-container{
+        display:flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .team .john{
+        width: 10%;
+    }
+
+
+    /* ----Contact Us, Location and Hours Grid----*/
+    .contact-container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "ct ct"
+        "ms lo"
+        "ho ho";
+    }
+    .c-topic{
+        grid-area: ct;
+    }
+    .contactform{
+        grid-area: ms;
+        padding-top: 0;
+    }
+    .location{
+        grid-area: lo;
+    }
+    .hours{
+        grid-area: ho;
+    }
+    .contact-container .c-topic h2{
+        margin: 0 auto;
+        padding:0;
+    }
+
 }

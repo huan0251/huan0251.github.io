@@ -417,8 +417,8 @@ footer ul li a{
     .logo-img{
         background-color: transparent;
         display:inline-block;
-        margin: 0 auto;
-        padding:30px 30px 30px 70px;
+        margin-right: 40px;
+        padding:20px 0px 30px 0px;
     }
 
     .search input {

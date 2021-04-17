@@ -143,11 +143,15 @@ p{
     color:#222;
 }
 /* Search bar */
-.serch{
-    display: block;
+
+.search{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+
 .search input {
-    width: 88%;
+    grid-column: 1 / span 4;
+    width: 100%;
     height:40px;
     display:inline-block;
     margin: 15px 0 15px 15px;
@@ -156,12 +160,16 @@ p{
     border: 0;
 }
 .search-btn{
+    grid-column: 5 / span 1; 
     background-color: #222;
     border: 1px solid #c78c06;
     color: #c78c06;
     font-size: 2rem;
-    padding: 5px 8px 7px 8px;
-    margin-left: 0;
+    padding: 1px 8px 1px 8px;
+    margin: 0;
+    margin-right: 1rem;
+    height: 43px;
+    margin-top: 14px;
 }
 
 
@@ -420,27 +428,27 @@ footer ul li a{
         margin: 15px 0 15px 15px;
         font-size: 1rem;
     }
-    .search-btn{
+    /* .search-btn{
         font-size: 1rem;
         padding: 7px 6px 7px 6px;
         margin-right: 20px;
-    }
+    } */
     .search{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
     .search input{
         grid-column: 1 / span 4;
-        vertical-align: center;
-    }
+        /* vertical-align: center; */
+    } 
     .search .search-btn{
-        grid-column: 5 / span 1;
+        grid-column: 5 / span 1; 
         font-size: 1rem;
-        padding: 0 6px 0 6px;
+        padding: 0px 6px 0px 6px;
         margin-right: 20px;
-        height: 30px;
-        display: inline-block;
-        vertical-align: center;
+        height: 32px;
+        display: inline-block; 
+        margin-top: 15px;
     }
    .header-nav{
        display: flex;
@@ -481,7 +489,7 @@ footer ul li a{
         margin-top: 0;
     }
 
-    /* ----DS Our Service---- */
+    /* ----DS Our Service - Grid---- */
     .service-container{
         display:grid;
         grid-template-columns: repeat(6, 1fr);
@@ -541,7 +549,7 @@ footer ul li a{
     }
 
 
-    /* ----DS Our Team---- */
+    /* ----DS Our Team - Flexbox---- */
     
     .team-container{
         display:flex;
@@ -550,49 +558,49 @@ footer ul li a{
         flex-basis: 0;
     }
     .john{
-        width: calc(49% - 3px);
+        width: calc(49% - 1px);
         display: inline-block;
         padding:0;
         margin: 0 auto;
         border:0;
         flex-grow: 1 ;
-        /* order:-2; */
+        max-height: 325px;
     }
     .bob{
-        width: calc(49% - 3px);
+        width: calc(49% - 1px);
         display: inline-block;
         padding:0;
         margin: 0 auto;
         border:0;
         flex-grow: 1 ;
-        /* order:2; */
+        max-height: 343px;
     }
     .team-textj, .team-textb{
-        width: calc(49% - 3px);
+        width: calc(49% - 22px);
         display: inline-block;
         vertical-align: top;
         margin:0 auto;
         padding:0;
         border:0;
         padding-left: 10px;
+        padding-right: 10px;
+        max-height: 325px;
     }
-    /* .t-topic{
-        order:-3;
-    }
-    .team-textj{
-        order:-1;
-    }
-    .team-textb{
-        order:1;
-    } */
     .teamb{
         display:flex;
         flex-direction: row-reverse;
+        max-height: 350px;
     }
+    .team-textj p, .team-textb p,{
+        margin-bottom: 0;
+    }
+    .teamj{
+        max-height: 325px;
+    } 
 
 
 
-    /* ----DS Contact Us, Location and Hours Grid----*/
+    /* ----DS Contact Us, Location and Hours - Grid----*/
     .contact-container{
         display:grid;
         grid-template-columns: auto auto;

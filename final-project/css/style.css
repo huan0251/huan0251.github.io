@@ -152,6 +152,8 @@ p{
     display:inline-block;
     margin: 15px 0 15px 15px;
     font-size: 1.5rem;
+    padding-right: 0;
+    border: 0;
 }
 .search-btn{
     background-color: #222;
@@ -161,6 +163,7 @@ p{
     padding: 5px 8px 7px 8px;
     margin-left: 0;
 }
+
 
 /* ------Main banner------ */
 
@@ -228,7 +231,7 @@ p{
     background-color: #ffe6ac;
 }
 .service-1 img, .service-2 img, .service-3 img, .service-4 img, .service-5 img{
-    min-width: 100%;
+    width: 100%;
 }
 .s-btn{
     color:#fff;
@@ -255,6 +258,7 @@ p{
     /* display: flex; */
     justify-content: space-between;
     padding: 30px 20px 10px 10px;
+    margin-top: 30px;
 }
 .vision h3{
     color: #fff;
@@ -289,40 +293,36 @@ p{
 /* ------Our team------ */
 
 .t-topic h2{
-    margin-top: 10px;
+    margin-top: 45px;
 }
 .team{
     background-color: #ffe6ac;
     
 }
 .team img{
-    min-width: 100%;
+    width: 100%;
 }
 .team-textj, .team-textb{
     margin-left:20px ;
     padding-bottom: 20px;
     margin-bottom: 15px;
 }
-/* hr{
+ hr{
     border: 1px solid brown;
-    margin-right: 12px; */
+    margin-right: 12px;
 }
-/* .team .team-text p{
-    border-top: 2px solid brown;
-} */
+.team-textj h4, .team-textb h4{
+    line-height: 15px;
+}
 
 /* --------Contact Us-------- */
+
 .contact-container .c-topic h2{
     display: inline-block;
-    margin-left: 20px;
-    margin-top: 100px;
-    padding-left: 20px;
-    padding-top: 100px;
 }
 .contactform{
     box-sizing: border-box;
 	border: none;
-	padding: 20px;
 	padding-top: 10px;	
 }
 /*  Styling input fields */
@@ -345,8 +345,12 @@ p{
     padding: 6px 10px 6px 10px;
     margin-top: 15px;
 }
+.c-topic{
+    margin-top: 50px;
+}
 
 /* --------Hours-------- */
+
 table thead tr th{
     font-size: 1.2rem;
 }
@@ -354,7 +358,7 @@ table tbody tr td{
     font-size: 1.2rem;
 }
 table, th, td{
-    border: 1px solid #222;
+    border: 2px solid #222;
     height: 40px;
     padding-left: 10px;
     padding-top: 15px;
@@ -365,8 +369,12 @@ table{
 th{
     background-color: #ffe6ac;
 }
+.hours{
+    margin-top: 15px;
+}
 
 /* --------Location-------- */
+
 iframe{
     width: 100%;
     height: 500px;
@@ -475,7 +483,7 @@ footer ul li a{
     .service-container{
         display:grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(12, 1fr);
+        grid-template-rows: auto auto auto auto 100px auto auto auto auto;
         grid-template-areas:
         "topic topic topic topic topic topic"
         "dt dt dt mk mk mk"
@@ -483,15 +491,17 @@ footer ul li a{
         "dt dt dt mk mk mk"
         "dt dt dt mk mk mk"
         "dt dt dt mk mk mk"
-        "dt dt dt mk mk mk"
-        "vp vp wd wd pt pt"
         "vp vp wd wd pt pt"
         "vp vp wd wd pt pt"
         "vp vp wd wd pt pt"
         "vp vp wd wd pt pt";
+        padding: 0 80px 15px 80px;
+        
     }
     .s-topic{
         grid-area: topic;
+        grid-template-rows: min-content;
+        margin-left: 10px;
     }
     .service-1{
         grid-area: dt;
@@ -508,11 +518,26 @@ footer ul li a{
     .service-5{
         grid-area: pt;
     }
+    .service-1, .service-2, .service-3, .service-4, .service-5{
+        margin:10px;
+    }
+    .s-btn{
+        width: 100%;
+    }
+    .info{
+        padding-right: 10px;
+        /* padding-bottom: 10px; */
+    }
+    .info h3{
+        font-size: 2rem;
+    }
 
     /* ----Our Vision---- */
     .vision{
         padding:20px 50px 10px 80px;
+        margin-top: 5px;
     }
+
 
     /* ----Our Team---- */
     /* .team-container{
@@ -557,43 +582,78 @@ footer ul li a{
     }  */
     
     .team-container{
+        /* background-color: transparent;
+        padding-bottom: 0; */
         display:flex;
         flex-flow: wrap;
-        justify-content: space-evenly;
-        align-items: center;
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
+        /* flex-basis: 0; */
     }
-
-    .team .john{
-        width: 10%;
+    .john{
+        width: calc(48% - 6px);
+        display: inline-block;
+        order:-2;
+    }
+    .bob{
+        width: calc(48% - 6px);
+        display: inline-block;
+        order:2;
+    }
+    .team-textj, .team-textb{
+        width: calc(48% - 6px);
+        display: inline-block;
+        text-align: ;
+    }
+    .t-topic{
+        order:-3;
+    }
+    .team-textj{
+        order:-1;
+    }
+    .team-textb{
+        order:1;
     }
 
 
     /* ----Contact Us, Location and Hours Grid----*/
     .contact-container{
         display:grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: auto auto;
         grid-template-rows: repeat(3, 1fr);
+        grid-template-rows:100px auto 250px;
         grid-template-areas:
         "ct ct"
         "ms lo"
         "ho ho";
+        margin-top: 50px;
+        padding: 0 80px 15px 80px;
     }
     .c-topic{
         grid-area: ct;
+        grid-template-rows: 20px;
+        margin-top: 0px;
     }
     .contactform{
         grid-area: ms;
         padding-top: 0;
+        padding-right: 15px;
     }
     .location{
         grid-area: lo;
+        padding-left: 10px;
     }
     .hours{
         grid-area: ho;
+        grid-template-rows: auto;
     }
-    .contact-container .c-topic h2{
-        margin: 0 auto;
-        padding:0;
+    iframe{
+        height:400px;
     }
+    /* ----Footer---- */
+    footer ul li{
+        margin-left: 80px;
+    }
+
 
 }

@@ -273,42 +273,27 @@ p{
     border: solid 1px #c78c06;
     padding: 30px 30px 30px 40px;
 }
-/* .vision-container{
-    position:relative;
-    margin-top: 30px;
-} */
-/* .vision {
-    background:none;
-    position: absolute;
-    top:12%;
-    bottom:12%;
-    margin: 0 auto;
-    padding:12px;
-} */
-
-/* .clip-me{
-    clip-path: inset(10% 0% 40% 0%);
-} */
 
 /* ------Our team------ */
 
 .t-topic h2{
     margin-top: 45px;
 }
-.team{
+.teamj, .teamb{
     background-color: #ffe6ac;
     
 }
-.team img{
+.teamj img, .teamb img{
     width: 100%;
 }
 .team-textj, .team-textb{
+    background-color: #ffe6ac;
     margin-left:20px ;
     padding-bottom: 20px;
     margin-bottom: 15px;
 }
  hr{
-    border: 1px solid brown;
+    border: 1px solid #222;
     margin-right: 12px;
 }
 .team-textj h4, .team-textb h4{
@@ -437,8 +422,25 @@ footer ul li a{
     }
     .search-btn{
         font-size: 1rem;
-        padding: 8px 6px 8px 6px;
+        padding: 7px 6px 7px 6px;
         margin-right: 20px;
+    }
+    .search{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .search input{
+        grid-column: 1 / span 4;
+        vertical-align: center;
+    }
+    .search .search-btn{
+        grid-column: 5 / span 1;
+        font-size: 1rem;
+        padding: 0 6px 0 6px;
+        margin-right: 20px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: center;
     }
    .header-nav{
        display: flex;
@@ -459,7 +461,7 @@ footer ul li a{
     padding: 20px 20px 10px 10px;
     }
     /* --------DS Main Content-------- */
-    /* ----About Us---- */
+    /* ----DS About Us---- */
     .about-img{
         width:45%;
         float:left;
@@ -479,7 +481,7 @@ footer ul li a{
         margin-top: 0;
     }
 
-    /* ----Our Service---- */
+    /* ----DS Our Service---- */
     .service-container{
         display:grid;
         grid-template-columns: repeat(6, 1fr);
@@ -529,83 +531,52 @@ footer ul li a{
         /* padding-bottom: 10px; */
     }
     .info h3{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
-    /* ----Our Vision---- */
+    /* ----DS Our Vision---- */
     .vision{
         padding:20px 50px 10px 80px;
         margin-top: 5px;
     }
 
 
-    /* ----Our Team---- */
-    /* .team-container{
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        grid-template-areas:
-        "team team"
-        "jimg jtext"
-        "jimg jtext"
-        "jimg jtext"
-        "btext bimg"
-        "btext bimg"
-        "btext bimg";
-    }
-    .t-topic{
-        grid-area: team;
-        grid-column: 1 /span 2;
-        grid-row: 1 / span 1;
-    }
-    .john{
-        grid-area: jimg;
-        grid-column: 1 /span 1;
-        grid-row: 2 / span 1;
-        width: 50%;
-    }
-    .team-textj{
-        grid-area: jtext;
-        grid-column: 2 /span 1;
-        grid-row: 2 / span 1;
-    }
-    .bob{
-        grid-area: bimg;
-        grid-column: 2 /span 1;
-        grid-row: 3/ span 1;
-        width: 50%;
-    }
-    .team-textb{
-        grid-area: btext;
-        grid-column: 1/span 1;
-        grid-row: 3 / span 1;
-    }  */
+    /* ----DS Our Team---- */
     
     .team-container{
-        /* background-color: transparent;
-        padding-bottom: 0; */
         display:flex;
         flex-flow: wrap;
-        /* justify-content: space-evenly; */
-        /* align-items: center; */
-        /* flex-basis: 0; */
+        padding:0 80px 0 80px;
+        flex-basis: 0;
     }
     .john{
-        width: calc(48% - 6px);
+        width: calc(49% - 3px);
         display: inline-block;
-        order:-2;
+        padding:0;
+        margin: 0 auto;
+        border:0;
+        flex-grow: 1 ;
+        /* order:-2; */
     }
     .bob{
-        width: calc(48% - 6px);
+        width: calc(49% - 3px);
         display: inline-block;
-        order:2;
+        padding:0;
+        margin: 0 auto;
+        border:0;
+        flex-grow: 1 ;
+        /* order:2; */
     }
     .team-textj, .team-textb{
-        width: calc(48% - 6px);
+        width: calc(49% - 3px);
         display: inline-block;
-        text-align: ;
+        vertical-align: top;
+        margin:0 auto;
+        padding:0;
+        border:0;
+        padding-left: 10px;
     }
-    .t-topic{
+    /* .t-topic{
         order:-3;
     }
     .team-textj{
@@ -613,10 +584,15 @@ footer ul li a{
     }
     .team-textb{
         order:1;
+    } */
+    .teamb{
+        display:flex;
+        flex-direction: row-reverse;
     }
 
 
-    /* ----Contact Us, Location and Hours Grid----*/
+
+    /* ----DS Contact Us, Location and Hours Grid----*/
     .contact-container{
         display:grid;
         grid-template-columns: auto auto;

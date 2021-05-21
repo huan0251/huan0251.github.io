@@ -1,9 +1,122 @@
 
-/* -------------General Setting------------ */
-
-#nav.nav{
-	background-color: white;
+/* -------------General Style Setting------------ */
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color:#222;
 }
 
+#main.main{
+    max-width:none;
+}
 
-/* -------------Mobile Style------------ */
+/* Navigation Basic Style */
+#nav.nav{
+	width: none;
+    padding: 0;
+
+    
+    background-color: #92B4A7;
+    border:none;
+}
+.nav a.nav-link{
+    /* display: block; */
+    padding:20px;
+    font-weight: 400;
+    color: black;
+}
+
+/* Home Basic Style */
+
+#home.home{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* About Basic Style */
+#about.about{
+    background-color: white;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Contact Basic Style */
+#contact.contact{
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* Contact Form Basic Style */
+#contact.contact .contact-form{
+    background-color: #F3F9D2;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* Footer Style */
+footer{
+    background-color: #92B4A7;
+    padding: 15px 15px;
+}
+
+/* --------------------Mobile Style------------------- */
+
+@media screen and (max-width: 600px){
+html{
+    font-size: 14px;
+}
+#nav.nav{
+  display: inline-flex;
+}
+
+#home.home{
+    padding:10px 15px 10px 20px;
+
+    color: #2F2F2F;
+    font-weight: 300;
+}
+.home h1.page-title, .about h2.section-title, .contact h2.section-title, p{
+    text-align: left;
+    padding-left: 15px;
+}
+
+#about.about{
+    padding:30px 20px;
+    font-weight: 200;
+
+    background-color: #2F2F2F;
+    color: #FF934F;
+}
+img.about-image {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+#contact.contact{
+    padding:30px 20px;
+}
+
+form.contact-form{
+    width: auto;
+}
+
+input.contact-form-input, textarea.contact-form-input{
+    width: 95%;
+}
+}
+
+/* --------------------Tablet Style------------------ */
+@media screen and (min-width: 600px) and (max-width:992){
+
+}
+
+/* --------------------Desktop Style------------------ */
+@media screen and (min-width: 992px){
+
+}

@@ -10,17 +10,20 @@ html{
     max-width:none;
 }
 
+.home h1.page-title, .about h2.section-title, .contact h2.section-title, p{
+    text-align: left;
+}
+
 /* Navigation Basic Style */
 #nav.nav{
-	width: none;
-    padding: 0;
+	width: 100%;
+    padding: 20px;
 
     
     background-color: #92B4A7;
     border:none;
 }
 .nav a.nav-link{
-    /* display: block; */
     padding:20px;
     font-weight: 400;
     color: black;
@@ -31,6 +34,7 @@ html{
 #home.home{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 /* About Basic Style */
@@ -39,6 +43,8 @@ html{
     color:black;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    font-weight: 300;
+    padding:20px 40px;
 }
 
 /* Contact Basic Style */
@@ -47,6 +53,7 @@ html{
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    padding: 20px 30px;
 }
 
 /* Contact Form Basic Style */
@@ -54,50 +61,73 @@ html{
     background-color: #F3F9D2;
 }
 
+#contact.contact .contact-form label{
+    font-size: 1.2rem;
+}
+
+/* Button style */
 button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    padding: 8px 8px;  
+    background-color:#92B4A7;
+    color: #2f2f2f;
+}
+button:hover{
+    background-color: rgb(117, 218, 184);
 }
 
 /* Footer Style */
 footer{
     background-color: #92B4A7;
-    padding: 15px 15px;
+    padding: 10px 10px;
 }
 
 /* --------------------Mobile Style------------------- */
 
 @media screen and (max-width: 600px){
-html{
+/* decrease default font size */
+    html{
     font-size: 14px;
 }
+
+/* Navigation content in the middle of screen */
 #nav.nav{
-  display: inline-flex;
+  display: flex;
+  flex-wrap:wrap;
+  padding: 0;
 }
 
+#nav.nav a{
+    flex-grow: 1;
+}
+
+/* main content format */
 #home.home{
     padding:10px 15px 10px 20px;
 
     color: #2F2F2F;
-    font-weight: 300;
 }
+
+/* heading consistency */
 .home h1.page-title, .about h2.section-title, .contact h2.section-title, p{
-    text-align: left;
     padding-left: 15px;
 }
 
+/* About content format */
 #about.about{
     padding:30px 20px;
     font-weight: 200;
 
     background-color: #2F2F2F;
-    color: #FF934F;
+    color: #92B4A7;
 }
 img.about-image {
     margin-left: 20px;
     margin-right: 0;
 }
 
+/* Contact content format */
 #contact.contact{
     padding:30px 20px;
 }
@@ -112,11 +142,45 @@ input.contact-form-input, textarea.contact-form-input{
 }
 
 /* --------------------Tablet Style------------------ */
-@media screen and (min-width: 600px) and (max-width:992){
+
+@media screen and (min-width: 601px) and (max-width:992px){
+.nav a.nav-link{
+    margin-right: 50px;
+}
+    
+#home.home{
+    padding: 40px;
+}
+
+#about.about{
+    background-color: #2F2F2F;
+    color: #92B4A7;
+}
+
+#contact.contact{
+    padding:20px;
+}
+form.contact-form{
+    width: 95%;
+    padding-right: 0px;
+}
+
+input.contact-form-input, textarea.contact-form-input{
+    width: 92%;
+}
 
 }
 
 /* --------------------Desktop Style------------------ */
 @media screen and (min-width: 992px){
+.nav a.nav-link{
+    margin-right: 50px;
+}
+
+#home.home{
+    padding: 30px;
+}
+
+
 
 }

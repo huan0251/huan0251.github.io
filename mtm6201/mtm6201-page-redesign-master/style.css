@@ -17,12 +17,18 @@ html{
 /* Navigation Basic Style */
 #nav.nav{
 	width: 100%;
-    padding: 20px;
-
+    display: flex;
+    flex-wrap:wrap;
+    padding: 0;
     
     background-color: #92B4A7;
     border:none;
 }
+
+#nav.nav a{
+    flex-grow: 1;
+}
+
 .nav a.nav-link{
     padding:20px;
     font-weight: 400;
@@ -39,8 +45,8 @@ html{
 
 /* About Basic Style */
 #about.about{
-    background-color: white;
-    color:black;
+    background-color: #2F2F2F;
+    color: #92B4A7;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
@@ -80,7 +86,7 @@ button:hover{
 /* Footer Style */
 footer{
     background-color: #92B4A7;
-    padding: 10px 10px;
+    padding: 10px 30px;
 }
 
 /* --------------------Mobile Style------------------- */
@@ -92,11 +98,6 @@ footer{
 }
 
 /* Navigation content in the middle of screen */
-#nav.nav{
-  display: flex;
-  flex-wrap:wrap;
-  padding: 0;
-}
 
 #nav.nav a{
     flex-grow: 1;
@@ -118,11 +119,10 @@ footer{
 #about.about{
     padding:30px 20px;
     font-weight: 200;
-
-    background-color: #2F2F2F;
-    color: #92B4A7;
 }
+
 img.about-image {
+    width: 40%;
     margin-left: 20px;
     margin-right: 0;
 }
@@ -139,22 +139,18 @@ form.contact-form{
 input.contact-form-input, textarea.contact-form-input{
     width: 95%;
 }
+
+footer{
+    padding: 10px 10px;
+}
 }
 
 /* --------------------Tablet Style------------------ */
 
 @media screen and (min-width: 601px) and (max-width:992px){
-.nav a.nav-link{
-    margin-right: 50px;
-}
-    
-#home.home{
-    padding: 40px;
-}
 
-#about.about{
-    background-color: #2F2F2F;
-    color: #92B4A7;
+#home.home{
+    padding: 10px 40px;
 }
 
 #contact.contact{
@@ -163,6 +159,7 @@ input.contact-form-input, textarea.contact-form-input{
 form.contact-form{
     width: 95%;
     padding-right: 0px;
+    margin-left: 0;
 }
 
 input.contact-form-input, textarea.contact-form-input{
@@ -173,14 +170,54 @@ input.contact-form-input, textarea.contact-form-input{
 
 /* --------------------Desktop Style------------------ */
 @media screen and (min-width: 992px){
-.nav a.nav-link{
-    margin-right: 50px;
+
+#nav.nav{
+    display: flex;
+  flex-wrap:wrap;
+  padding: 0;
 }
 
 #home.home{
+    width: 100%;
+    padding: 0;   
+} 
+
+.home p{
+    background-color: #2F2F2F;
+    color: #92B4A7;
+    padding:50px 30px;
+    margin: 0;
+}
+.home h1{
+    font-size: 2.5rem;
+    padding:30px 30px 0px 30px;
+    margin-bottom: 5px;
+}
+#about.about{
+    background-color: white;
+    color: black;
     padding: 30px;
 }
 
+#main.main{
+  display:flex;
+  flex-wrap:wrap;
+}
 
+#about.about{
+    width: calc(43% - 4px);
+}
+
+#contact.contact{
+    width: calc(45% - 4px);
+}
+
+form.contact-form{
+    width: auto;
+}
+
+h2{
+    font-size: 2.5rem;
+}
 
 }

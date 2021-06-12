@@ -1,2 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-font-family: 'Montserrat', sans-serif;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --------------------CSS RESET ----------------------*/
+
+/* -------------------Custom CSS ----------------------*/
+/* Set defult font-family, font-size font's color and margin to make all media queries consistaince */
+html{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7ff;
+    font-size: 16px;
+    color:#333131; 
+}
+main{
+    margin: 20px 30px 20px 30px;
+}
+
+/* Set all header fonts' propotion, weight and line-height to make all media queries consistaince  */
+h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 120%;    
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 120%;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 140%;
+    padding-bottom: 10px;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+
+/* Logo */
+.logo{
+    width: 40%;
+}
+
+/* Apply Form Style */
+.applyform{
+    background-color: white;
+
+    padding:20px;
+    border-radius: 26px;
+    box-shadow: 5px 10px 10px #b1b1b1;
+}
+
+/* form input font family, size, color */
+.infoinput input{
+    font-family: 'Montserrat', sans-serif;
+    color: #9B9B9B;
+
+    background-color: #F4F4F5;
+    border: none;
+    border-radius: 11px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width:100%;
+}
+
+#fname, #lname, #email, #phone{
+    width:93%
+    ;
+}
+
+
+/* Cancel the decoration and change text color to #ff8480 to match the link design in the form */
+span a {
+    color: #ff8480;
+    text-decoration: none;
+}
+
+/* Make form's last praragraph font size smaller,increse line-height and decrease font weight to avoid to affect main content reading  */
+.status{
+    font-size: 0.9rem;
+    line-height: 130%;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+/* Button in form */
+form .d-btn{
+    background-color: #57eeab;
+    border: none;
+    padding:10px;
+    width: 100%;
+}
+
+/* Adjust buttons' text and style to match the UX design */
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 11px;
+}
+
+
+/* footer */
+footer{
+    background-color: #fffd8c;
+    padding: 20px 30px 20px 30px;
+}
+footer p{
+    line-height: 120%;
+}
+
+footer form button {
+    color: white;
+    background-color: #ff8480;
+    border: none;
+    width: 100%;
+}
+
+

@@ -11,38 +11,64 @@
     <title>Landing Page</title>
 </head>
 <body>
-    <header class="header">
-        <img src="./images/logo/logo.png" alt="logo" class="logo">
-        <h1>Want to be your own boss?</h1>
-        <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-    </header>
-    <section>
-        <img src="./images/bg-image/scooter.svg" alt="scooter">
-    </section>
-    <section>
-        <form action="#" method="get">
-            <h3>Apply Now</h3>
-            <h4>Enter your info below</h4>
+    <main>
+        <header class="header">
+            <img src="./images/logo/logo.png" alt="logo" class="logo">
+            <h1>Want to be your own boss?</h1>
+            <h3>Start today and make up to $30/hr driving your own vehicle with Dash!</h3>
+        </header>
+        <section>
+            <img src="./images/bg-image/scooter.svg" alt="scooter">
+        </section>
+        <section>
+            <form action="#" method="get" class="applyform">
+                <h2>Apply Now</h2>
+                <p>Enter your info below.</p>
+                <div class="infoinput">
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="fname" value="First name"required>
+                </div>
+                <div class="infoinput">
+                    <label for="lname"></label>
+                    <input type="text" id="lname" name="lname" value="Last name"required>
+                </div>
+                <div class="infoinput">
+                    <label for="phone"></label>
+                    <input type="phone" id="phone" name="phone" value="Phone number" required>
+                </div>
+                <div class="infoinput">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" value="Email address" required>
+                </div>
+                <input type="checkbox" id="agree" name="agree" value="agree">
+                <label for="agree"> I agree to dash terms</label><br>
+            </div>
+            <button class="d-btn" type="submit">DRIVE WITH US</button>
+            <p class="status">Already applied? <span><a href="#"> Check your application status here</a></span></p>
+            </form>
+        </section>
+    </main>   
+    <footer>
+        <span><h4>See how much you can earn with Dash.</h4></span>
+        <span><p>how many hours do you want to drive with us this week?</p></span>
+        <form action="#" method="get" class="fform">
             <div>
-                <label for="fname"></label>
-                <input type="text" id="fname" name="fname" value="First name"required>
+                <label for="hours"></label>
+                <input type="text" id="hours" name="hours" value="Hours" required>
             </div>
             <div>
-                <label for="youremail">Email</label>
-                <input type="email" id="youremail" name="youremail"  required>
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+                <label for="city"></label>
+                <input type="text" id="city" name="city" value="City"required>
             </div>
         </div>
-        <button class="c-btn" type="submit">Send</button>
+        <button class="c-btn" type="submit">CALCULATE</button>
         </form>
-    </section>
-    
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-linkedin"></i>
+            <div class="socialmedia">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+    </footer>
 </body>
 </html>

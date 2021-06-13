@@ -17,9 +17,9 @@
             <h1>Want to be your own boss?</h1>
             <h3>Start today and make up to $30/hr driving your own vehicle with Dash!</h3>
         </header>
-        <section>
-            <img src="./images/bg-image/scooter.svg" alt="scooter">
-        </section>
+        <div class="scooter">
+            <img src="./images/bg-image/scooter.svg" alt="scooter" class="scooterimg">
+        </div>
         <section>
             <form action="#" method="get" class="applyform">
                 <h2>Apply Now</h2>
@@ -49,25 +49,25 @@
         </section>
     </main>   
     <footer>
-        <span><h4>See how much you can earn with Dash.</h4></span>
-        <span><p>how many hours do you want to drive with us this week?</p></span>
-        <form action="#" method="get" class="fform">
-            <div>
-                <label for="hours"></label>
-                <input type="text" id="hours" name="hours" value="Hours" required>
-            </div>
-            <div>
-                <label for="city"></label>
-                <input type="text" id="city" name="city" value="City"required>
-            </div>
-                <button class="c-btn" type="submit">CALCULATE</button>
-        </form>
-            <div class="socialmedia">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-            </div>
+        <div class="calculate">
+            <span><h4>See how much you can earn with Dash.</h4></span>
+            <span><p>how many hours do you want to drive with us this week?</p></span>
+            <form action="#" method="get" class="fform">
+                    <label for="hours"></label>
+                    <input type="text" id="hours" name="hours" value="Hours" required>
+                    
+                    <label for="city"></label>
+                    <input type="text" id="city" name="city" value="City"required> 
+
+                    <button class="c-btn" type="submit">CALCULATE</button>
+            </form>
+        </div>
+        <div class="socialmedia">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
     </footer>
 </body>
 </html>

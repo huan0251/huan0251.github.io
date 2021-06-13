@@ -56,8 +56,10 @@ html{
     font-size: 16px;
     color:#333131; 
 }
+
+/* Set main area margin 0 36 0 36 to match UX setting */
 main{
-    margin: 20px 35px 20px 35px;
+    margin: 0px 36px 0px 36px;
 }
 
 /* Set all header fonts' propotion, weight and line-height to make all media queries consistaince  */
@@ -87,20 +89,21 @@ p{
     padding-bottom: 10px;
 }
 
-
 /* Logo */
 .logo{
     width: 40%;
 }
 
-/* Apply Form Style */
+/* Apply Form Style to 26px radius for all corner.
+   Set form blur to X-5, Y-10, B-15
+   Set color, padding(form300px-content wdith250px)/2 and margin to match UX design*/
 .applyform{
-    background-color: white;
-
-    padding:20px;
     border-radius: 26px;
-    box-shadow: 5px 10px 10px #b1b1b1;
 
+    box-shadow: 5px 10px 15px #333131;
+
+    background-color: white;
+    padding: 25px;
     margin-top: 15px;
     margin-bottom: 50px;
 }
@@ -165,11 +168,12 @@ button{
 /* footer */
 footer{
     background-color: #fffd8c;
-    padding: 20px 35px 20px 35px;
 }
 
-footer span h4{
-    margin-right: 40px;
+/* Footer left and right padding: (footer width 375px-content div width 302px)/2=36.5=36 
+   Top and bottom each is 20px*/
+.calculate{
+    padding:20px 36px 20px 36px;
 }
 
 footer p{
@@ -196,49 +200,74 @@ footer form button {
     border: none;
     border-radius: 11px;
     padding: 12px 10px 12px 10px;
-    width: 20%;
 }
 
+/* Use flexbox to make "hours" and "city" textbox in one line.
+   Use flex-grow with setting "hours" textbox in 20% width to make sure they will ratio as the media size grow.*/
 .fform{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
 }
-
-.fform div:nth-child(1){
+#hours{
+    margin-right: 10px;
+    flex-grow: 1;
     width: 20%;
 }
-
-.fform div:nth-child(2){
-    width: 70%;
-    margin-left: 25px;
+#city{
+    flex-grow: 4;
 }
 
-.fform input:nth-child(2){
-    width:92%;
-}
-
-/* Socialmedia icons */
+/* Adjust Socialmedia icons's size */
 i {
     font-size: 35px;   
 }
 
+/* Socia media div position setting */
+/* Use flex and warp to make sure 4 icons in one line.
+   Use space-between and padding (375-260.5)/2=57.25=57px to divide the middle space but take equally margin for start and the end. */
 .socialmedia{
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-around;
-
-    margin-top: 30px;
+    justify-content:space-between;
+    padding: 0px 57px 20px 57px;
 }
 
 /* -----------------Tablet Style----------------- */
 
 @media screen and (min-width: 768px){
+    
+    /* Set main area margin 0 80 0 80 to match UX setting */
+    main{
+        margin: 0px 80px 0px 80px;
+    }
+    
+    /* Change logo's size to keep the logo size as same as mobile style */
     .logo{
         width: 18%;
     }
+
+    /* H1 defult font-size 16px*5rem=80px to match XD file's 80px.*/
     h1{
         font-size: 5rem;
-        margin-right: 70px;
     }
+
+    /* H3 defult font-size 16px*1.5rem=24px to match XD file's 80px.*/
+    h3{
+        font-size: 1.5rem;
+    }
+
+    /* Decrease main image's width and set image's top margin to negative value to let paragraph cover a little part of the image. */
+    .scooterimg{
+        width:80%;
+        margin-top: -20px;
+    }
+    /* Use flexbox to center the main image */
+    .scooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 
 }

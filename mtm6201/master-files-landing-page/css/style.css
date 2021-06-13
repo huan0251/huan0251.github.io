@@ -167,6 +167,11 @@ footer{
     background-color: #fffd8c;
     padding: 20px 35px 20px 35px;
 }
+
+footer span h4{
+    margin-right: 40px;
+}
+
 footer p{
     line-height: 120%;
 }
@@ -226,3 +231,14 @@ i {
 }
 
 /* -----------------Tablet Style----------------- */
+
+@media screen and (min-width: 768px){
+    .logo{
+        width: 18%;
+    }
+    h1{
+        font-size: 5rem;
+        margin-right: 70px;
+    }
+
+}

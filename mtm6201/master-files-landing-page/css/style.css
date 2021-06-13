@@ -57,7 +57,7 @@ html{
     color:#333131; 
 }
 main{
-    margin: 20px 30px 20px 30px;
+    margin: 20px 35px 20px 35px;
 }
 
 /* Set all header fonts' propotion, weight and line-height to make all media queries consistaince  */
@@ -72,9 +72,9 @@ h2{
     padding-bottom: 15px;
 }
 h3{
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 120%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 130%;
 }
 h4{
     font-size: 1.1rem;
@@ -100,11 +100,16 @@ p{
     padding:20px;
     border-radius: 26px;
     box-shadow: 5px 10px 10px #b1b1b1;
+
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 /* form input font family, size, color */
 .infoinput input{
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
     color: #9B9B9B;
 
     background-color: #F4F4F5;
@@ -120,11 +125,14 @@ p{
     ;
 }
 
+/* Hide default checkbox  */
+
 
 /* Cancel the decoration and change text color to #ff8480 to match the link design in the form */
 span a {
     color: #ff8480;
     text-decoration: none;
+
 }
 
 /* Make form's last praragraph font size smaller,increse line-height and decrease font weight to avoid to affect main content reading  */
@@ -141,6 +149,8 @@ form .d-btn{
     border: none;
     padding:10px;
     width: 100%;
+
+    margin-top: 15px;
 }
 
 /* Adjust buttons' text and style to match the UX design */
@@ -155,17 +165,64 @@ button{
 /* footer */
 footer{
     background-color: #fffd8c;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 35px 20px 35px;
 }
 footer p{
     line-height: 120%;
 }
 
+/* Adjust "CALCULATE: button background in using color palette's #ff8480 color 
+Padding top and button small than "DRIVE WITH US" button in half. */
 footer form button {
     color: white;
     background-color: #ff8480;
     border: none;
     width: 100%;
+    padding: 5px;
+    margin-top: 10px;
 }
 
+/* Calculate part input change style to match XD required. */
+.fform input{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing:1.2px;
+    color: #707070;
+    border: none;
+    border-radius: 11px;
+    padding: 12px 10px 12px 10px;
+    width: 20%;
+}
 
+.fform{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.fform div:nth-child(1){
+    width: 20%;
+}
+
+.fform div:nth-child(2){
+    width: 70%;
+    margin-left: 25px;
+}
+
+.fform input:nth-child(2){
+    width:92%;
+}
+
+/* Socialmedia icons */
+i {
+    font-size: 35px;   
+}
+
+.socialmedia{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+
+    margin-top: 30px;
+}
+
+/* -----------------Tablet Style----------------- */

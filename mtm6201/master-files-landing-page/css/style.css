@@ -79,7 +79,7 @@ h3{
     line-height: 130%;
 }
 h4{
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: 600;
     line-height: 140%;
     padding-bottom: 10px;
@@ -109,7 +109,7 @@ p{
 }
 
 /* form input font family, size, color */
-.infoinput input{
+.applyform input{
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 300;
@@ -118,14 +118,12 @@ p{
     background-color: #F4F4F5;
     border: none;
     border-radius: 11px;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
     margin-bottom: 15px;
-    width:100%;
 }
 
 #fname, #lname, #email, #phone{
-    width:93%
-    ;
+    width: 100%;
 }
 
 /* Hide default checkbox  */
@@ -135,7 +133,6 @@ p{
 span a {
     color: #ff8480;
     text-decoration: none;
-
 }
 
 /* Make form's last praragraph font size smaller,increse line-height and decrease font weight to avoid to affect main content reading  */
@@ -153,10 +150,10 @@ form .d-btn{
     padding:10px;
     width: 100%;
 
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-/* Adjust buttons' text and style to match the UX design */
+/* Adjust buttons' text size to 24px, bold and button's radius to 11px to match the UX design */
 button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -182,7 +179,7 @@ footer p{
 
 /* Adjust "CALCULATE: button background in using color palette's #ff8480 color 
 Padding top and button small than "DRIVE WITH US" button in half. */
-footer form button {
+.c-btn {
     color: white;
     background-color: #ff8480;
     border: none;
@@ -195,11 +192,11 @@ footer form button {
 .fform input{
     font-size: 1rem;
     font-weight: 300;
-    letter-spacing:1.2px;
+    /* letter-spacing:1.2px; */
     color: #707070;
     border: none;
     border-radius: 11px;
-    padding: 12px 10px 12px 10px;
+    /* padding: 12px 10px 12px 10px; */
 }
 
 /* Use flexbox to make "hours" and "city" textbox in one line.
@@ -268,6 +265,70 @@ i {
         justify-content: center;
     }
 
+    /* Use rem to set font size(40px, 30px,18px 20px 32px, 17px) in apply form to  match the UX require. */
+    h2{
+        font-size: 2.5rem;
+    }
+    .applyform p{
+        font-size: 1.875rem;
+    }
+    .applyform input{
+        font-size: 1.125rem;
+    }
+    .appltform label{
+        font-size: 1.25rem;
+    }
+    .d-btn{
+        font-size: 2rem;
+    }
+    .applyform .status {
+        font-size: 1.0625rem;
+        text-align: center;
+    }
 
+    /* Increse the apply form padding (605px-525px)/2=40px to match the tablet style */
+    .applyform{
+        padding: 40px;
+    }
+
+    /* ------footer------ */
+    /* Set footer left and right padding to 80px. (768px-608px)/2=80px */
+    footer{
+        padding:0px 80px 0px 80px;
+    }
+    /* Set div in footer's left and right padding to 0 and top and buttom to 20px. */
+    .calculate{
+        padding: 20px 0 20px 0;
+    }
+    
+    /* Put icons in the middle */
+    .socialmedia{
+        padding: 0 170px 20px 170px;
+    }
+    /* Set input text leave left margin 10px */
+    .fform input{
+        padding-left: 10px;
+    }
+
+    /* Adjust middle margin to 13px (ex: #city's X - #hours' width+X = margin in the middle)
+       Set flex grow to the appropriate value to match the UX design setting. */
+    #hours{
+        margin-right: 13px; 
+    }
+    #city{
+        flex-grow: 10;
+        margin-right: 13px;    
+    }
+
+    /* Cancel mobile style's top margin to make input and button in same height
+       Change width to auto to make button adjust with the media size change
+       Set flex grow to the appropriate value to match the UX design setting*/
+    .c-btn{
+        margin-top: 0;
+        width: auto;
+        flex-grow: 5;
+        
+    
+    }
 
 }

@@ -459,13 +459,23 @@ i {
     footer{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        "cf cf cf cf cf no no no no no dm dm";
+
+        padding: 40px 140px 40px 140px;
+        margin: 0,auto;
     }
     .calculate{
-        grid-column: 1 / span 5;
+        grid-area: cf;
     }
 
     .dsocialmedia{
-        grid-column: 1 / span 2; 
+        grid-area: dm;
+        align-self: center;
+        
+    }
+    footer .dsocialmedia {
+        justify-content: space-around;
     }
 
 }

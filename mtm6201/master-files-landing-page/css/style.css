@@ -89,7 +89,7 @@ p{
     padding-bottom: 10px;
 }
 
-/* Logo */
+/* Adjust width to decrease Logo size*/
 .logo{
     width: 40%;
 }
@@ -106,6 +106,10 @@ p{
     padding: 25px;
     margin-top: 15px;
     margin-bottom: 50px;
+}
+/* Use display to hide the paragraph that will use in desktop mode */
+.ap2{
+    display: none;
 }
 
 /* form input font family, size, color */
@@ -229,6 +233,10 @@ i {
     padding: 0px 57px 20px 57px;
 }
 
+/* Use display to hide the icons that will use in desktop mode */
+.dsocialmedia{
+    display: none;
+}
 /* -----------------Tablet Style----------------- */
 
 @media screen and (min-width: 768px){
@@ -240,7 +248,7 @@ i {
     
     /* Change logo's size to keep the logo size as same as mobile style */
     .logo{
-        width: 18%;
+        width: 20%;
     }
 
     /* H1 defult font-size 16px*5rem=80px to match XD file's 80px.*/
@@ -281,7 +289,7 @@ i {
     .d-btn{
         font-size: 2rem;
     }
-    .applyform .status {
+    .applyform .aforminput .status {
         font-size: 1.0625rem;
         text-align: center;
     }
@@ -289,6 +297,39 @@ i {
     /* Increse the apply form padding (605px-525px)/2=40px to match the tablet style */
     .applyform{
         padding: 40px;
+    }
+
+    /* Use flexbox to order "Email address" to third place and "Phone number" to forth place and  */
+    .aform{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .aform .aforminput:nth-child(1){
+        order: -3;
+        flex-basis: calc(100% - 6px);
+    }
+    .aform .aforminput:nth-child(2){
+        order: -2;
+        flex-basis: calc(100% - 6px);
+    }
+    .aform .aforminput:nth-child(4){
+        order: -1;
+        flex-basis: calc(100% - 6px);
+    }
+    .aform .aforminput:nth-child(3){
+        order: 0;
+        flex-basis: calc(100% - 6px);
+    }
+    .aform .aforminput:nth-child(5){
+        order: 1;
+    }
+    .aform .aforminput:nth-child(6){
+        order: 2;
+        width: 100%;
+    }
+    .aform .aforminput:nth-child(7) {
+        order: 3;
+        justify-content:center;
     }
 
     /* ------footer------ */
@@ -327,8 +368,34 @@ i {
         margin-top: 0;
         width: auto;
         flex-grow: 5;
-        
-    
     }
 
+}
+
+/* -----------------Desktop Style----------------- */
+
+@media screen and (min-width: 1024px){
+    /* Adjust width to decrease Logo size*/
+    .logo{
+        width: 10%;
+    }
+
+    /*  Use display to hide the paragraph that used in mobile and tablet
+    Use display to show the paragraph that are used in desktop */
+    .ap1{
+        display: none;
+    }
+    .ap2{
+        display: inline-block;
+    }
+
+
+    /* Use display to hide the icons that used in mobile and tablet
+    Use display to show the icons that are used in desktop  */
+    .socialmedia{
+    display: none;
+    }
+    .dsocialmedia{
+        display: inline-block;
+    }
 }

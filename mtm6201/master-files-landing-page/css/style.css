@@ -455,7 +455,9 @@ i {
         display: inline-block;
     }
 
-    /* Use grid to separate footer to two part in one column */
+    /* Use grid to separate footer to two part in one column
+       Set 12 grids as UX file
+       The "no" area used to be the space between two content div  */
     footer{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -465,17 +467,18 @@ i {
         padding: 40px 140px 40px 140px;
         margin: 0,auto;
     }
+    /* The main content div in footer needs 5 grids */
     .calculate{
         grid-area: cf;
     }
-
+    /* Social media icons div in footer needs 2 grids
+       Set display to flex to set equally space between incons */
     .dsocialmedia{
         grid-area: dm;
         align-self: center;
-        
-    }
-    footer .dsocialmedia {
+        display: flex;
         justify-content: space-around;
     }
+    
 
 }

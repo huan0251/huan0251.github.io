@@ -92,6 +92,7 @@ p{
 /* Adjust width to decrease Logo size*/
 .logo{
     width: 40%;
+    margin: 0px 36px 0px 36px;
 }
 
 /* Apply Form Style to 26px radius for all corner.
@@ -249,6 +250,7 @@ i {
     /* Change logo's size to keep the logo size as same as mobile style */
     .logo{
         width: 20%;
+        margin: 0px 80px 0px 80px;
     }
 
     /* H1 defult font-size 16px*5rem=80px to match XD file's 80px.*/
@@ -330,6 +332,11 @@ i {
     .aform .aforminput:nth-child(7) {
         order: 3;
         justify-content:center;
+        text-align: center;
+    }
+    .aform .aforminput:nth-child(7) p{
+        justify-self:center;
+        text-align: center;
     }
 
     /* ------footer------ */
@@ -375,9 +382,53 @@ i {
 /* -----------------Desktop Style----------------- */
 
 @media screen and (min-width: 1024px){
-    /* Adjust width to decrease Logo size*/
+    /* Adjust width to decrease Logo size and margin*/
     .logo{
-        width: 10%;
+        width: 7%;
+        margin: 0 140px 0 140px;
+    }
+
+    /* Set main content's left and right margin. (web width 1920px-content width 1640px)/2 = 140 */
+    main{
+        margin: 60px 140px 0 140px;
+    }
+
+    /* Use flexbox to flex header, main image and apply form in one line */
+    main{
+        display: flex;
+    }
+    
+    /* main image size */
+    .scooterimg{
+        width: 100%;
+    }
+
+    /* Use flex-grow to express header, main image and apply form width to 4:6:4 
+       Set image's left and right margin to negative value to let two div cover a grid column of the image.*/
+    .header{
+        width: calc(40% - 4px);
+    }
+    .scooter{
+        width: calc(48% - 4px);
+        margin: 0 -60px 0 -80px;
+    }
+    .mainform{
+        width: calc(40% - 4px);
+    }
+
+    
+    /* Use rem to set font size in apply form to match the UX desktop version (24px 18px 18px 15px 16px) */
+    .applyform .ap2{
+        font-size: 1.5rem;
+    }
+    .aforminput input{
+        font-size: 1.125rem;
+    }
+    .aforminput .status{
+        font-size: 0.9375rem;
+    }
+    .aforminput .status span a{
+        font-size: 1rem;
     }
 
     /*  Use display to hide the paragraph that used in mobile and tablet
@@ -389,6 +440,11 @@ i {
         display: inline-block;
     }
 
+    .aforminput:nth-child(7){
+        /* justify-items: center; */
+        text-align: center;
+    }
+
 
     /* Use display to hide the icons that used in mobile and tablet
     Use display to show the icons that are used in desktop  */
@@ -398,4 +454,18 @@ i {
     .dsocialmedia{
         display: inline-block;
     }
+
+    /* Use grid to separate footer to two part in one column */
+    footer{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .calculate{
+        grid-column: 1 / span 5;
+    }
+
+    .dsocialmedia{
+        grid-column: 1 / span 2; 
+    }
+
 }

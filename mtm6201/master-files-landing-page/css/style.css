@@ -121,7 +121,7 @@ p{
 .aforminput .round p {
    position: relative;
    font-size: 15px;
-   padding: 7px 0px 0px 20px;
+   padding: 5px 0px 0px 20px;
 }
 /* customized round corner check box using to replace default checkbox */
 .aforminput .round label {

@@ -63,28 +63,29 @@ main{
 }
 
 /* Set all header fonts' propotion, weight and line-height to make all media queries consistaince  */
+/* 60px */
 h1{
-    font-size: 3.8rem;
+    font-size: 3.75rem;
     font-weight: 700;
-    line-height: 120%;    
 }
+/* 40px */
 h2{
     font-size: 2.5rem;
     font-weight: 600;
     padding-bottom: 15px;
 }
+/* 24px */
 h3{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 130%;
+    line-height: 29px;
 }
+/* 18px */
 h4{
     font-size: 1.125rem;
     font-weight: 600;
-    line-height: 140%;
     padding-bottom: 10px;
 }
-
 p{
     padding-bottom: 10px;
 }
@@ -131,8 +132,25 @@ p{
     width: 100%;
 }
 
-/* Hide default checkbox  */
-
+/* Change checkbox style */
+#agree{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #333131;
+    border-radius: 5px;
+    vertical-align: -webkit-baseline-middle;
+    -webkit-appearance: none;
+    /* width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    vertical-align:-webkit-baseline-middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor:auto; */
+}
 
 /* Cancel the decoration and change text color to #ff8480 to match the link design in the form */
 span a {
@@ -140,10 +158,9 @@ span a {
     text-decoration: none;
 }
 
-/* Make form's last praragraph font size smaller,increse line-height and decrease font weight to avoid to affect main content reading  */
+/* Make form's last praragraph font size smaller and decrease font weight to avoid to affect main content reading  */
 .status{
-    font-size: 0.9rem;
-    line-height: 130%;
+    font-size: 0.875rem;
     font-weight: 300;
     padding-top: 10px;
 }
@@ -197,11 +214,10 @@ Padding top and button small than "DRIVE WITH US" button in half. */
 .fform input{
     font-size: 1rem;
     font-weight: 300;
-    /* letter-spacing:1.2px; */
     color: #707070;
     border: none;
     border-radius: 11px;
-    /* padding: 12px 10px 12px 10px; */
+    padding: 12px 10px 12px 10px;
 }
 
 /* Use flexbox to make "hours" and "city" textbox in one line.
@@ -256,6 +272,7 @@ i {
     /* H1 defult font-size 16px*5rem=80px to match XD file's 80px.*/
     h1{
         font-size: 5rem;
+        line-height: 97px;
     }
 
     /* H3 defult font-size 16px*1.5rem=24px to match XD file's 80px.*/
@@ -331,7 +348,7 @@ i {
     }
     .aform .aforminput:nth-child(7) {
         order: 3;
-        justify-content:center;
+        width: 100%;
         text-align: center;
     }
     .aform .aforminput:nth-child(7) p{
@@ -339,6 +356,12 @@ i {
         text-align: center;
     }
 
+    /* Change checkbox width(29px) and height(29px) to match UX tablet design*/
+    #agree{
+        width: 29px;
+        height: 29px;
+    }
+        
     /* ------footer------ */
     /* Set footer left and right padding to 80px. (768px-608px)/2=80px */
     footer{
@@ -385,7 +408,7 @@ i {
     /* Adjust width to decrease Logo size and margin*/
     .logo{
         width: 7%;
-        margin: 0 140px 0 140px;
+        margin: 0 148px 0 148px;
     }
 
     /* Set main content's left and right margin. (web width 1920px-content width 1640px)/2 = 140 */
@@ -403,31 +426,40 @@ i {
         width: 100%;
     }
 
-    /* Use flex-grow to express header, main image and apply form width to 4:6:4 
+    /* Use flex-grow to express header, main image and apply form width to 33%:50%:33%
+       Ex:Header width 536/ main width(desktop width1920 - margin 148*2) 1624 =0.33
        Set image's left and right margin to negative value to let two div cover a grid column of the image.*/
     .header{
-        width: calc(40% - 4px);
+        width: calc(33% - 4px);
     }
+    /* Each covered area of the image in UX is one grid(122px) */
     .scooter{
-        width: calc(48% - 4px);
-        margin: 0 -60px 0 -80px;
+        width: calc(50% - 4px);
+        margin: 0 -122px 0 -122px;
     }
     .mainform{
-        width: calc(40% - 4px);
+        width: calc(33% - 4px);
     }
 
-    
+    /* Set h1 and h3 line space (540-511=29px)*/
+    h1{
+        margin-bottom: 29px;
+    }
+
     /* Use rem to set font size in apply form to match the UX desktop version (24px 18px 18px 15px 16px) */
     .applyform .ap2{
         font-size: 1.5rem;
     }
-    .aforminput input{
+    .aform .aforminput input{
         font-size: 1.125rem;
     }
-    .aforminput .status{
+    .aforminput:nth-child(5){
+        font-size: 1.125rem;
+    }
+    .aform .aforminput .status{
         font-size: 0.9375rem;
     }
-    .aforminput .status span a{
+    .aform .aforminput .status span a{
         font-size: 1rem;
     }
 
@@ -440,11 +472,12 @@ i {
         display: inline-block;
     }
 
-    .aforminput:nth-child(7){
-        /* justify-items: center; */
-        text-align: center;
+    /* Change checkbox's tablet setting to desktop setting to width(25px) and height(25px) to match UX design*/
+    /* #In XD file that is 25px*26px. I assumed that it is a mistake so I use 25*25 */
+    #agree{
+        width: 25px;
+        height: 25px;
     }
-
 
     /* Use display to hide the icons that used in mobile and tablet
     Use display to show the icons that are used in desktop  */
@@ -464,7 +497,7 @@ i {
         grid-template-areas:
         "cf cf cf cf cf no no no no no dm dm";
 
-        padding: 40px 140px 40px 140px;
+        padding: 40px 148px 40px 148px;
         margin: 0,auto;
     }
     /* The main content div in footer needs 5 grids */

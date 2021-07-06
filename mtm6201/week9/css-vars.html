@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color:#336699;
+            --acent-color: #efefef;
+            --sans-serif: Helvetica, Arial, sans-serif;
+            --column-width: 50%;
+        }
+
+        .wrap{
+            width:90%;
+            margin: auto;
+        }
+
+        article{
+            width: var(--column-width);
+            font-family: var(--sans-serif);
+        }
+
+        a{
+            color:var(--main-color);
+        }
+
+        section{
+            display: flex;
+        }
+
+        header{
+            background-color: var(--main-color);
+            color: white;
+            padding: 1rem;
+        }
+        footer{
+            background-color: var(--acent-color);
+            padding:1rem;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Welcome!</h1>
+        </header>
+        <section>
+            <article>
+                <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Vero soluta nesciunt consequatur cupiditate repellendus debitis autem rem explicabo facere eligendi magni voluptatibus minima quia, reprehenderit incidunt nisi sit. Deleniti, laboriosam.</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero soluta nesciunt consequatur cupiditate repellendus debitis autem rem explicabo facere eligendi magni voluptatibus minima quia, reprehenderit incidunt nisi sit. Deleniti, laboriosam.</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero soluta nesciunt consequatur cupiditate repellendus debitis autem rem explicabo facere eligendi magni voluptatibus minima quia, reprehenderit incidunt nisi sit. Deleniti, laboriosam.</p>
+            </article>
+        </section>
+        <footer>
+            <p>&copy; 2021 Ming</p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

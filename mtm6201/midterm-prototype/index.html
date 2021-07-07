@@ -17,11 +17,12 @@
     <div class="container">
         <header>
             <img src="image/logo.png" alt="La Palette Logo">
-<!-- For mobile mode, need to put hamberger menu icon in the navigation to display different media screens  -->
+            <!-- For mobile mode, need to put hamberger menu icon in the navigation to display different media queries  -->
             <nav>
                 <div class="hamberger-menu">
                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
                 </div>
+                <!-- Use for display in tablet and desktop mode and pop-up in mobile mode -->
                 <div>
                     <ul class="nav-list">
                         <li><a href="#" class="home-nav">HOME</a></li>
@@ -33,22 +34,83 @@
             </nav>    
         </header>
         <main>
+            <!-- Banner with image and text to show the Unique Selling Point and attract customer to press the banner area to link to Meun page -->
             <div class="banner">
-                <img src="image/banner-1920.jpg" alt="">
-                <div class="slogan">
-                    <p>What is your mood today?</p>
-                </div>
-
+                <a href="#">
+                    <img src="image/banner-1920.jpg" alt="Banner image"
+                    srcset="image/banner-320.jpg 320w,
+                            image/banner-480.jpg 480w,
+                            image/banner-640.jpg 640w,
+                            image/banner-720.jpg 720w,
+                            image/banner-960.jpg 960w,
+                            image/banner-1440.jpg 1440w"
+                    sizes="(min-width: 1920px) 100vw">
+                    <div class="slogan">
+                        <p>What is your mood today?</p>
+                    </div>
+                </a>
             </div>
-
+            <section class="maininfo">
+                <!-- Use Google map to embed map that can zoom in and out in home page-->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.369683655095!2d-75.69687968444399!3d45.42204867910043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05aaa3d54d7f%3A0x7db7934077dd9470!2s90%20Elgin%20St%2C%20Ottawa%2C%20ON%20K1P%205E9!5e0!3m2!1sen!2sca!4v1625655894382!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- Wrap the contents in div to make it flex easily -->
+                <div class="location">
+                    <h2>La Palette</h2>
+                    <p>90 Elgin Street Ottawa ON</p>
+                    <p>1-613-234-5678</p>
+                </div>
+                <!-- Wrap the contents in div to make it flex easily -->
+                <div class="hours">
+                    <h2>Operating Hours</h2>
+                    <ul>
+                        <li>Monday: Closed</li>
+                        <li>Tuesday-Friday: 12pm - 8pm</li>
+                        <li>Saturday: 11am - 8pm</li>
+                        <li>Sunday: 11am - 5pm</li>
+                    </ul>
+                </div>
+            </section>
         </main>
+        <!-- Footer to make another style for itself. -->
         <footer>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 15.781c-2.084 0-3.781-1.696-3.781-3.781s1.696-3.781 3.781-3.781c1.172 0 2.306.523 3.136 1.669l1.857-1.218c-1.281-1.826-3.133-2.67-4.993-2.67-3.308 0-6 2.692-6 6s2.691 6 6 6c1.881 0 3.724-.859 4.994-2.67l-1.857-1.218c-.828 1.14-1.959 1.669-3.137 1.669z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.176 1.322l2.844-1.322 4.041 7.89-2.724 1.341c-.538 1.259 2.159 6.289 3.297 6.372.09-.058 2.671-1.328 2.671-1.328l4.11 7.932s-2.764 1.354-2.854 1.396c-7.862 3.591-19.103-18.258-11.385-22.281zm1.929 1.274l-1.023.504c-5.294 2.762 4.177 21.185 9.648 18.686l.971-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.251-4.398z"/></svg>
-    </footer>
-
-    </div>
-    
+            <!-- Defined a set of social media icon div rows for different display options in differne media queries -->
+            <div class="socialmedia">
+                <ul>
+                    <!-- Make all social media png to be a button link to the social media sites-->
+                    <li><a targrt="_blank" href="http://www.facebook.com">
+                             <img src="image/facebook-icon.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li><a targrt="_blank" href="https://twitter.com/">
+                            <img src="image/twitter-icon.png" alt="Twitter">
+                        </a>
+                    </li>
+                    <li><a targrt="_blank" href="https://www.instagram.com/">
+                            <img src="image/ig-icon.png" alt="Instargram">
+                        </a>
+                    </li>
+                    <li><a targrt="_blank" href="mailto:lapalette@gmail.com">
+                            <img src="image/email-icon.png" alt="E-mail">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Set divs to wrap the footer for making flex or grid. -->
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 15.781c-2.084 0-3.781-1.696-3.781-3.781s1.696-3.781 3.781-3.781c1.172 0 2.306.523 3.136 1.669l1.857-1.218c-1.281-1.826-3.133-2.67-4.993-2.67-3.308 0-6 2.692-6 6s2.691 6 6 6c1.881 0 3.724-.859 4.994-2.67l-1.857-1.218c-.828 1.14-1.959 1.669-3.137 1.669z"/></svg>
+                <p>2021 La Palette ice cream</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                <p>90 Elgin Street Ottawa ON</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.176 1.322l2.844-1.322 4.041 7.89-2.724 1.341c-.538 1.259 2.159 6.289 3.297 6.372.09-.058 2.671-1.328 2.671-1.328l4.11 7.932s-2.764 1.354-2.854 1.396c-7.862 3.591-19.103-18.258-11.385-22.281zm1.929 1.274l-1.023.504c-5.294 2.762 4.177 21.185 9.648 18.686l.971-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.251-4.398z"/></svg>
+                <p>1-613-234-5678</p>
+            </div>            
+        </footer>
+    </div>  
 </body>
 </html>

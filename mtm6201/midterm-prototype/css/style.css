@@ -1,4 +1,4 @@
-* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -54,5 +54,5 @@ table {
 /* Set defult font-family, font-size font's color and margin to make all media queries consistaince */
 html{
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Niconne', cursive;
+    /* font-family: 'Niconne', cursive; */
 }

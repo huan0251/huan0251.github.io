@@ -52,5 +52,7 @@ table {
 /* -------------------Custom CSS ----------------------*/
 /* ---------- Start of Mobile ----------- */
 /* Set defult font-family, font-size font's color and margin to make all media queries consistaince */
-font-family: 'Montserrat', sans-serif;
-font-family: 'Niconne', cursive;
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Niconne', cursive;
+}

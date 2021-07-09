@@ -55,7 +55,7 @@ table {
 /* Set defult font-family, font-size, link decoration and margin to make all media queries consistaince */
 html{
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Niconne', cursive; */
+    /* font-family: 'Niconne', cursive, serif; */
 	background-color: #f9f7f0;
     font-size: 16px;
 }
@@ -235,6 +235,11 @@ footer svg{
 	margin-right: 10px;
 	width: 4%;
 }
+footer{
+	width: 100%;
+}
+
+/* Make footer content in the middle of footer width */
 .copyright{
 	display: flex;
 	align-items: center;
@@ -252,11 +257,6 @@ footer svg{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-/* Make footer content in the middle of footer width */
-.{
-	display: inline-block;
 }
 
 /* ------------------End of Mobile Style------------------------ */
@@ -362,6 +362,8 @@ footer svg{
         
 		align-items:center;
 		padding: 20px 36px 20px 36px;
+		width: auto;
+		max-width: 100%;
 	}
 	/* The copyright div needs 3 grids */
     .copyright{
@@ -396,8 +398,8 @@ footer svg{
 	.phone{
 		justify-content: flex-start;
 	}
-	
-/* ------------------End of Mobile style------------------------ */
+}	
+/* ------------------End of Tablet style------------------------ */
 
 /* -----------------Start of Desktop Style----------------- */
 
@@ -424,8 +426,5 @@ footer svg{
 
 /* -----------------End of Desktop Style----------------- */
 
-/* ---------------------------------------------------------
-
-                    Menu Page Style CSS
--------------------------------------------------------------*/
+/* ------------------------Menu Page Style CSS--------------------------------*/
 

@@ -55,7 +55,6 @@ table {
 /* Set defult font-family, font-size, link decoration and margin to make all media queries consistaince */
 html{
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Niconne', cursive, serif; */
 	background-color: #f9f7f0;
     font-size: 16px;
 }
@@ -109,32 +108,32 @@ header, .maininfo{
 
 /* Use grid to separate header to two part in one column. Set 4 grids as UX file
    The "no" area used to be the space between two content div  */
-	header{
-		display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-        "lo no no ha";
-        align-items:center;
-	}
+header{
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "lo no no ha";
+    align-items:center;
+}
 
-	header img{
-		grid-area: lo;
-	}
+header img{
+	grid-area: lo;
+}
 
-	.nav{
-		grid-area: ha;
-		justify-self: flex-end;
-	}
+.nav{
+	grid-area: ha;
+	justify-self: flex-end;
+}
 
 /* Banner text style setting with font size, weight, style, padding and background colour(#16375b) with opacity 30% */
-    h1{
-		color: #f9f7f0;
-		font-size: 1.375rem;
-		font-weight: 900;
-		font-style: italic;
-		padding: 10px 70px 10px 100px;
-		background-color: rgba(41, 71,103, 0.7);
-	}
+h1{
+	color: #f9f7f0;
+	font-size: 1.375rem;
+	font-weight: 900;
+	font-style: italic;
+	padding: 10px 70px 10px 100px;
+	background-color: rgba(41, 71,103, 0.7);
+}
 
 /* figcaption{
 	color: #f9f7f0;
@@ -426,5 +425,98 @@ footer{
 
 /* -----------------End of Desktop Style----------------- */
 
-/* ------------------------Menu Page Style CSS--------------------------------*/
+/* -------------------------------------------------------
+                    Menu Page Style CSS
+----------------------------------------------------------
+*/
+/* ----------------- Start of Mobile Style----------------- */
+
+/* image caption on the image */
+figure{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+figcaption{
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: #bdce3b;
+	position: absolute;
+	margin: 150px 50px 150px 350px;
+	width: 100%;
+}
+
+/* Use display to hide images that will not be use in mobile mode */
+.simg, .wimg, .cimg{
+	display: none;
+}
+
+/* Set different fonts, size and color for menu categories' texts */
+.sc, .wc, .pc, .cc, .mc{
+    font-family: 'Niconne', cursive, serif;
+	font-size: 1.125rem;
+	color: #bdce3b;
+}
+
+/* Use grid to display four parts of image and content. Set 4*5 grids as UX file  */
+.mcontent{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: 
+	"pi pi sw sw"
+	"pi pi sw sw"
+	"pi pi mi mi"
+	"pcm pcm mi mi"
+	"pcm pcm mi mi";
+
+	margin: 20px 0 20px 0;
+	background-color: #2B0130;
+}
+/* Menu images's position */
+.pimg{
+	grid-area: pi;
+}
+.mimg{
+	grid-area: mi;
+}
+
+/* Decrese images' size to fit the mobile display */
+.mcontent img{
+	width: 100%;
+}
+
+/* Use grid-area to adjust menu top right hand side caption's position */
+.menuupc{
+	grid-area: sw;
+    padding-left: 20px;
+	grid-row: 2;
+}
+.sc{
+	padding-bottom: 10px;
+}
+
+/* Use grid-area to adjust menu down left hand side caption's position */
+.menudownc{
+	grid-area: pcm;
+	text-align: end;
+	padding-right: 20px;
+}
+.pc{
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+.cc{
+	padding-bottom: 10px;
+}
+
+/* ------------------End of Mobile Style------------------------ */
+
+/* ------------------- Start of Tablet Style -------------------- */
+
+@media screen and (min-width: 768px){
+	/* Dispaly all image visiable */
+}
+
 

@@ -429,7 +429,7 @@ footer{
                     Menu Page Style CSS
 ----------------------------------------------------------
 */
-/* ----------------- Start of Mobile Style----------------- */
+/* ----------------- Start of Menu Mobile Style----------------- */
 
 /* image caption on the image */
 figure{
@@ -511,12 +511,123 @@ figcaption{
 	padding-bottom: 10px;
 }
 
-/* ------------------End of Mobile Style------------------------ */
+/* ------------------End of Menu Mobile Style------------------------ */
 
-/* ------------------- Start of Tablet Style -------------------- */
+/* ------------------- Start of Menu Tablet Style -------------------- */
 
 @media screen and (min-width: 768px){
-	/* Dispaly all image visiable */
+	
+	/* Use font weight to show the location of the page in navigation and cancel the home page style */
+	.nav-list li:nth-child(3){
+		font-weight: 600;
+	}
+	.nav-list li:nth-child(1){
+		font-weight: 400;
+	}
+	
+	/* Use display to hide mobile banner */
+	figure{
+		display: none;
+	}
+
+	/* Dispaly all menu use image visiable */
+	.simg, .wimg, .cimg{
+		display: block;
+		width: 100%;
+	}
+
+	/* Use grid to display five parts of image and content. Set 6*8 grids as UX file  */
+	.mcontent{
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(7, 1fr);
+		grid-template-areas:
+		"si si si wi wi wi"
+		"si si si wi wi wi"
+		"sw sw sw sw sw sw"
+		"pi pi ci ci mi mi"
+		"pi pi ci ci mi mi"
+		"pi pi ci ci mi mi"
+		"pcm pcm pcm pcm pcm pcm";
+	}
+
+    /* Menu images' grid-area setting */
+	.simg{
+		grid-area: si;
+	}
+	.wimg{
+		grid-area: wi;
+	}
+	.pimg{
+		grid-area: pi;
+	}
+	.cimg{
+		grid-area: ci;
+	}
+	.mimg{
+		grid-area: mi;
+	}
+
+    /* Menu captions' grid-area setting and display  */
+    .menuupc{
+		grid-area: sw;
+		display: inline-flex;
+		justify-content: center;
+	}
+	.menudownc{
+		grid-area: pcm;
+		display: inline-flex;
+		justify-content: center;
+	}
+
+	/* Increse font size and use padding to display each menu captions' position */
+	.sc, .wc, .pc, .cc, .mc{
+		font-size: 1.78rem;
+	}
+	.sc{
+		padding: 40px 100px 10px 0px;
+	}
+	.wc{
+		padding: 40px 0px 10px 100px;
+	}
+	.pc{
+		padding: 0px 120px 0px 0px;
+	}
+	.cc{
+		padding: 0px 50px 0px 50px;
+	}
+	.mc{
+		padding: 0px 0px 0px 80px;
+	}	
 }
 
+/* ------------------End of Menu Tablet style------------------------ */
 
+/* -----------------Start of Menu Desktop Style----------------- */
+
+@media screen and (min-width: 1024px){
+	/* Use padding to adjust the menun captions' position */
+	.sc{
+		padding: 40px 300px 10px 0px;
+	}
+	.wc{
+		padding: 40px 0px 10px 200px;
+	}
+	.pc{
+		padding: 0px 200px 0px 0px;
+	}
+	.cc{
+		padding: 0px 0px 0px 100px;
+	}
+	.mc{
+		padding: 0px 0px 0px 200px;
+	}	
+}
+
+/* -----------------End of Menu Desktop Style----------------- */
+
+/* -------------------------------------------------------
+                    Contact Page Style CSS
+----------------------------------------------------------
+*/
+/* ----------------- Start of Contact Mobile Style----------------- */

@@ -25,16 +25,43 @@
                 <!-- Use for display in tablet and desktop mode and pop-up in mobile mode -->
                 <div class="mainnav">
                     <ul class="nav-list">
-                        <li><a href="index.html" class="home-nav">HOME</a></li>
-                        <li><a href="#" class="about-nav">ABOUT</a></li>
-                        <li><a href="menu.html" class="menu-nav">MENU</a></li>
-                        <li><a href="contact.html" class="contact-nav">CONTACT</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="contact.html" class="active">CONTACT</a></li>
                     </ul>
                 </div>
             </nav>    
         </header>
         <main>
-
+            <!-- Banner with image and Caption on it to show the page's location -->
+            <figure>
+                <figcaption>Contact</figcaption>
+                <img src="image/banner-menu.jpg" alt="Contact banner">
+            </figure>
+            <!-- Main contact form -->
+            <div class="mainform">
+                <form action="#" method="get" class="contactform">
+                    <div class="form">
+                        <div class="forminput">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="forminput">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="forminput">
+                            <label for="message">Message/Suggestion</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <!-- Submit button -->
+                        <div class="forminput">
+                            <button class="sbtn" type="submit">Submit</button>
+                        </div>
+                    </div>      
+                </form>
+            </div>
         </main>
         <!-- Footer to make another style for itself. -->
         <footer>

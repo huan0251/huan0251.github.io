@@ -444,7 +444,7 @@ footer svg{
 */
 /* ----------------- Start of Menu Mobile Style----------------- */
 
-/* image caption on the image */
+/* Use Position setting to let image caption display on the image */
 figure{
 	width: 100%;
 	text-align: end;
@@ -461,7 +461,6 @@ figcaption{
 figure img{
 	position: relative;
 	width: 100%;
-
 }
 
 /* Use display to hide images that will not be use in mobile mode */
@@ -667,7 +666,7 @@ form{
 }
 label{
     color: #bdce3b;
-	font-family: 'Great Vibes', cursive, serif;
+	font-family: 'Italianno', cursive, serif;
 	font-size: 1.25rem;
 }
 
@@ -765,4 +764,6 @@ label{
 		padding: 25px 0px 20px 10px;
 	}
 }
+
+/* -----------------End of Contact Desktop Style----------------- */
 	

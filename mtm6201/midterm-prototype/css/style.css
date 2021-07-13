@@ -83,6 +83,7 @@ header, .maininfo{
 .nav-list{
 	text-align: end;
 }
+/* It is important to set position to absolute that will not inpact the display of logo and hamberger menu in header */
 .mainnav{
 	max-width: fit-content;
 	margin-left: 145px;
@@ -666,7 +667,7 @@ form{
 }
 label{
     color: #bdce3b;
-	font-family: 'Italianno', cursive, serif;
+	font-family: 'Great Vibes', cursive, serif;
 	font-size: 1.25rem;
 }
 

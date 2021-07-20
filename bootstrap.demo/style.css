@@ -1,0 +1,14 @@
+body{
+    background-color: #369;
+}
+.container{
+    background-color: #fff;
+}
+
+.col, [class^="col-"]{
+    background-color: #ccc;
+}
+
+.products{
+    background-color: aqua;
+}

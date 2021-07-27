@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boostrap This!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 col-lg-1 display-1 text-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                    <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+                    <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+                  </svg>
+            </div>
+            <div class="col-10 col-lg-11 display-1">Boostrap This!</div>
+        </div>
+    </div>
+    <section>
+        <h1>Features of Boostrapt</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2>Starter template</h2>
+                    <p>When starting an html, be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. You can go to <a href="http://getbootstrap.com/docs/5.0/getting-started/introduction/">Boostrap Website</a> to find the latest start template then copy it and paste on your HTML file to start.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2>Mobile First</h2>
+                    <p>Bootstrap is developed mobile first, they optimize code for mobile devices first and then scale up components as necessary using CSS media queries. Be sure to add the responsive viewport meta tag to your &lt;head&gt; in HTML</p>
+                </div>  
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2>Intuitive Components</h2>
+                    <p>Boostrap have many components, such as alents, buttons,cards, navbars, and popovers. These are simillar as CSS but the easier way with adding class into HTML.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Components Example</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="navs-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="navs" aria-selected="true">Navs & Tabs</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Button</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Carousel</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="navs" role="tabpanel" aria-labelledby="navs-tab">
+                <h3>JavaScript behavior navs and tabs</h3>
+                <p>In the original,Tabs' navigation takes the basic nav and adds the .nav-tabs class to generate a tabbed interface. Here we use role="tablist", role="tab", role="tabpanel", and additional aria- attributes in order to convey their structure, functionality and current state to users of assistive technologies</p>
+                <p>As a best practice, The Boostrap website recommend using &lt;button&gt; elements for the tabs, as these are controls that trigger a dynamic change, rather than links that navigate to a new page or location.</p>
+                <p>See the example of this nav-tab, looks like a kind of cards.</p>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

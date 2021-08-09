@@ -3,9 +3,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.container-fluid .mainnav{
+/* .container-fluid .mainnav{
     background-image: url(/images/home-1.jpg);
     width: 100%;
+} */
+
+header{
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    z-index: 1;
+    width: 100%;
+}
+
+.header-home{
+    position: relative;
 }
 
 /* Set footer style to make it consistency */

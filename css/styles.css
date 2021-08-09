@@ -1,3 +1,24 @@
-h1{
-    color: aqua;
+
+.nav-item, .nav-link, .dropdown-item{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid .mainnav{
+    background-image: url(/images/home-1.jpg);
+    width: 100%;
+}
+
+/* Set footer style to make it consistency */
+footer{
+    background-color: #079FB0;
+}
+
+@media screen and (max-width: 768px){
+    .container-fluid{
+        background-color: rgba(7, 159, 176, 0.5);
+        
+    }
+    header div nav a img {
+        width: 50%;
+    }
 }

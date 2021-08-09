@@ -20,17 +20,83 @@ header{
     position: relative;
 }
 
-/* Set footer style to make it consistency */
+/* Set footer background, text color and align to match the design */
 footer{
     background-color: #079FB0;
+    padding: 20px;
+    display:block;
+	text-align: center;
+}
+
+/* Set phone and email icon size and display with text in one row */
+.phone svg, .phone p, .email svg, .email p {
+    display: inline-block;
+}
+
+/* Change footer text's color, font weight and padding */
+.copyright, .phone p, .email p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.copyright{
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 768px){
     .container-fluid{
-        background-color: rgba(7, 159, 176, 0.5);
-        
+        background-color: rgba(7, 159, 176, 0.5); 
     }
     header div nav a img {
         width: 50%;
     }
+}
+
+/* ------------------End of Mobile Style------------------------ */
+
+/* ------------------- Start of Tablet Style -------------------- */
+
+@media screen and (min-width: 769px){
+    
+    /* Use grid to separate footer to three parts in one column
+       Set 8 grids as UX file */
+       footer{
+		display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas:
+        "co co co fc fc fc sm sm";
+        
+		align-items:center;
+		padding: 20px 36px 20px 36px;
+		width: 100%;
+	}
+
+	/* The copyright div needs 3 grids */
+    .copyright{
+		grid-area: co;
+		text-align: left;
+		padding-bottom: 0;
+	}
+
+	/* The footer-contact div needs 3 grids */
+     /* Use text-align to flex contact information align to left */
+    .footer-contact{
+		grid-area: fc;
+        text-align: left;
+	}
+
+	/* The socialmedia div needs 2 grids */
+    .socialmedia{
+		grid-area: sm;
+	}
+
+    .socialmedia a{
+        padding-left: 10px;
+    }
+    .socialmedia a svg{
+        width: 40px;
+        height: 40px;
+    }
+
+   
 }

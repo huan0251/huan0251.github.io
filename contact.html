@@ -18,7 +18,7 @@
     <!-- Header with background image and navigation bar -->
     <!-- Use Boostrapt .container-fluid to make the header flow all screen width-->
     <header>
-        <div class="container-fluid mainnav">
+        <div class="container-fluid mainnav contactpage">
           <!-- Use Boostrapt to display the hamberger menu -->
           <nav class="navbar navbar-expand-md navbar-light">
             <a href="index.html" class="navbar-brand">
@@ -71,31 +71,41 @@
         <h4>Please fill out the form below to request a quote for a project, inquire about a collaboration, or simply say hello. I’m also happy to refer you to someone else for a specific project need! I love to hear your story.</h4>
         <form action="#" method="get" class="contactform">
             <div class="form">
-                <div class="forminput">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-                    <p>First Name</p>
+                <div class="row">
+                    <div class="col-12">Name*</div>
+                    <div class="col-6 forminput">
+                        <label for="name"></label>
+                        <input type="text" placeholder="First name" aria-label="First name" id="name" name="name" required>
+                    </div>
+                    <div class="col-6 forminput">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Last name" aria-label="Last name" id="name" name="name" required>
+                    </div>
                 </div>
-                <div class="forminput">
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" required>
-                    <p>Last Name</p>
+                <div class="row">
+                    <div class="col-12">E-mail*</div>
+                    <div class="col-12 forminput">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
                 </div>
-                <div class="forminput">
-                    <label for="email">E-mail*</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="row">
+                    <div class="col-12">Subject*</div>
+                    <div class="forminput">
+                        <label for="subject"></label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
                 </div>
-                <div class="forminput">
-                    <label for="subject">Subject*</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="forminput">
-                    <label for="message">Message*</label>
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <div class="row">
+                    <div class="col-12">Message*</div>
+                    <div class="forminput">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
                 </div>
                 <!-- Submit button -->
-                <div class="forminput">
-                    <button class="sbtn" type="submit">Submit</button>
+                <div class="submitbutton">
+                    <button class="sbtn" id="submit-form" type="submit">Submit</button>
                 </div>
             </div>      
         </form>

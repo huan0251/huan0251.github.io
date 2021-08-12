@@ -1,4 +1,9 @@
-/* ------------------Start of Mobile Style------------------------ */
+/* ------------------Start of Home Page Mobile Style------------------------ */
+font-family: 'Roboto', sans-serif;
+main{
+    font-family: 'Prompt', sans-serif; 
+    font-size: 16px;
+}
 
 .nav-item, .nav-link, .dropdown-item{
     font-family: 'Roboto', sans-serif;
@@ -24,6 +29,9 @@
     width: 100%;
     top: 35%;
     left: 0;
+    font-weight: 200;
+    font-size: 1.125rem;
+    color: #7c7c7c;
 }
 
 .home-about {
@@ -35,6 +43,11 @@
     width: 100%;
     top: 35%;
     left: 0;
+    font-family: 'Prompt', sans-serif; 
+}
+.habout-text h4{
+    font-weight: 400;
+    font-size: 1.125rem;
 }
 
 .home-portfolio{
@@ -47,6 +60,12 @@
     top: 35%;
     left: 0;
 }
+.hportfolio-text h4{
+    font-family: 'Prompt', sans-serif; 
+    font-weight: 200;
+    font-size: 1.125rem;
+}
+
 
 .home-contact {
     position: relative;
@@ -57,7 +76,11 @@
     width: 100%;
     top: 35%;
     left: 0;
-    font-family: 'Roboto', sans-serif;
+}
+.hcontact-text h4{
+    font-family: 'Prompt', sans-serif; 
+    font-weight: 400;
+    font-size: 1.125rem;
 }
 
 /* Set main contents' button style */
@@ -67,14 +90,20 @@
     border-radius: 20px;
     padding: 5px 15px 5px 15px;
     margin-top: 10px;
+    font-family: 'Prompt', sans-serif; 
+    font-weight: 400;
+    font-size: 1.125rem;
 }
 
 .hportfolio-text .pbtn{
     border: none;
     background-color: #F5C13D;
     border-radius: 20px;
-    padding: 7px 17px 7px 17px;
+    padding: 7px 20px 7px 20px;
     margin-top: 10px;
+    font-family: 'Prompt', sans-serif; 
+    font-weight: 400;
+    font-size: 1.125rem;
 }
 
 /* Set footer background, text color and align to match the design */
@@ -109,12 +138,36 @@ footer{
     }
 }
 
-/* ------------------End of Mobile Style------------------------ */
+/* ------------------End of Home Page Mobile Style------------------------ */
 
-/* ------------------- Start of Tablet Style -------------------- */
+/* ------------------- Start of Home Page Tablet Style -------------------- */
 
 @media screen and (min-width: 769px){
     
+    /* Change font size for tablet */
+    .header-home h1{
+        font-size: 2rem;
+    }
+    .habout-text h4{
+        font-size: 2rem;
+    }
+    .habout-text .abtn, .hcontact-text .cbtn{
+        font-size: 1.5rem;
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+    .hportfolio-text h4{
+        font-size: 1.75rem;
+    }
+    .hportfolio-text .pbtn{
+        font-size: 1.5rem;
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+    .hcontact-text h4{
+        font-size: 1.75rem;
+    }
+
     /* Use grid to separate footer to three parts in one column
        Set 8 grids as UX file */
        footer{
@@ -154,8 +207,30 @@ footer{
         width: 40px;
         height: 40px;
     }
+}
 
-   
+/* ------------------- Start of Home Page Desktop Style -------------------- */
+@media screen and (min-width: 960px){
+    
+    /* Change font size for Desktop */
+    .header-home h1{
+        font-size: 3rem;
+    }
+    .habout-text h4{
+        font-size: 2.5rem;
+    }
+    .habout-text .abtn, .hcontact-text .cbtn{
+        font-size: 2rem;
+    }
+    .hportfolio-text h4{
+        font-size: 2.25rem;
+    }
+    .hportfolio-text .pbtn{
+        font-size: 2rem;
+    }
+    .hcontact-text h4{
+        font-size: 2.25rem;
+    }
 }
 
 /* ------------About Page Style CSS Start------------- */
@@ -215,4 +290,64 @@ footer{
     width: 100%;
     top: 45%;
     left: 0;
+}
+
+
+/* -------------Contact Page Style CSS Start------------- */
+
+/* Set the input border */
+input, textarea{
+    background-color: white;
+    border:1px solid #F5C13D;
+    border-radius: 5px;
+}
+/* Set Submit button style */
+.sbtn{
+    border: none;
+    background-color: #F5C13D;
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .contact-bg1{
+        display: none;
+    }
+    .contact-bg2{
+        display: none;
+    }
+
+    .container-fluid.mainnav.contactpage{
+        position: static;
+    }
+
+}
+
+/* ------------------- Start of Contact Page Tablet Style -------------------- */
+
+@media screen and (min-width: 769px){
+
+    /* Use display to show the banner image and hide desktop background image */
+    .contact-bg1{
+        display: table;
+    }
+    .contact-bg2{
+        display: none;
+    }
+}
+
+/* ------------------- Start of Contact Page Desktop Style -------------------- */
+
+@media screen and (min-width: 960px){
+
+    /* Use display to hide tablet images and show desktop background image */
+    .contact-bg1{
+        display: none;
+    }
+    .contact-bg2{
+        display: table;
+    }
+
+    
 }

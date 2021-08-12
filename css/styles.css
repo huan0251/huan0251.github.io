@@ -167,3 +167,40 @@ footer{
 .col.about-title h1{
     text-align: center;
 }
+
+
+/* -------------Portfolio Page Style CSS Start------------- */
+
+/* Use position to make main contents' related text on specified images */
+.dg{
+    position: relative;
+}
+.dg-title{
+    position: absolute;
+    text-align: end;
+    width: 100%;
+    top: 45%;
+    left: 0;
+}
+
+.wd{
+    position: relative;
+}
+.wd-title{
+    position: absolute;
+    text-align: start;
+    width: 100%;
+    top: 40%;
+    left: 0;
+}
+
+.ux{
+    position: relative;
+}
+.ux-title{
+    position: absolute;
+    text-align: end;
+    width: 100%;
+    top: 40%;
+    left: 0;
+}

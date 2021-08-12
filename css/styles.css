@@ -204,3 +204,15 @@ footer{
     top: 40%;
     left: 0;
 }
+
+/* -------------Digital Graphics Page Style CSS Start------------- */
+.dg-banner{
+    position: relative;
+}
+.dgb-title{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 45%;
+    left: 0;
+}

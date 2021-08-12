@@ -4,7 +4,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+.mainnav{
     position: absolute;
     top: -2px;
     left:-2px;
@@ -17,6 +17,14 @@ header{
 }
 
 /* Use position to make main contents' related text and button on specified images */
+
+.header-home h1{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 35%;
+    left: 0;
+}
 
 .home-about {
     position: relative;
@@ -93,7 +101,7 @@ footer{
 }
 
 @media screen and (max-width: 768px){
-    .container-fluid{
+    .container-fluid.mainnav{
         background-color: rgba(7, 159, 176, 0.5); 
     }
     header div nav a img {
@@ -148,4 +156,14 @@ footer{
     }
 
    
+}
+
+/* ------------About Page Style CSS Start------------- */
+/*  */
+.container-fluid.mainnav.about{
+    position: static;
+}
+
+.col.about-title h1{
+    text-align: center;
 }

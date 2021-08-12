@@ -12,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
-    <title>Ming-Fei Huang's Portfolio</title>
+    <title>About Me</title>
   </head>
   <body>
     <!-- Header with background image and navigation bar -->
     <!-- Use Boostrapt .container-fluid to make the header flow all screen width-->
-    <header>
-        <div class="container-fluid mainnav">
+    <header class="about-header">
+        <div class="container-fluid mainnav about">
           <!-- Use Boostrapt to display the hamberger menu -->
           <nav class="navbar navbar-expand-md navbar-light">
             <a href="#" class="navbar-brand">
@@ -61,29 +61,14 @@
     </header>
     <!-- Use div to put image as backgroung, text and button that links to every page  -->
     <main>
-      <div class="header-home">
-        <img class="img-fluid" src="/images/home-1.jpg" alt="home-1">
-        <h1>Welcome to Ming-Fei's Portfolio. Ming-Fei is an Interactive Media Design student at Algonquin college.</h1>
-      </div>
-      <div class="home-about">
-        <img class="img-fluid" src="/images/about-1.jpg" alt="about-1">
-        <div class="habout-text ">
-          <h4>Different Culture X Design X Special Education</h4>
-          <button class="abtn" type="submit">About Me</button>
-        </div>
-      </div>
-      <div class="home-portfolio">
-        <img class="img-fluid" src="/images/portfolio-1.jpg" alt="portfolio-1">
-        <div class="hportfolio-text">
-          <h4>Study at IMD program for one year. I work on many projects and try to create different styles of works. I’m always looking to try something new.</h4>
-          <button class="pbtn" type="submit">Portfolio</button>
-        </div>
-      </div>
-      <div class="home-contact">
-        <img class="img-fluid" src="/images/contact-1.jpg" alt="contact-1">
-        <div class="hcontact-text">
-          <h4>I’m accepting projects for 2021. Hear your “inspired story” is my pleasure.</h4>
-          <button class="cbtn" type="submit">Contact Me</button>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col about-title">
+                <h1 class="align-middle">About Me</h1>
+            </div>
+            <div class="col-8">
+                <img class="img-fluid" src="/images/aboutme.jpg" alt="Ming-Fei Photo">
+            </div>
         </div>
       </div>
     </main>

@@ -16,6 +16,10 @@ Fortunately, I encounter the problem from midterm project, and now I know how to
 
 >I am very happy that I can build a web page all by my own. I built this web portfolio without changing my UX design. Although my design and web are not perfect, but I learned that when being a UX designer, my design should consider some practical of coding. Fancy design is good but give a hard time to developer. I think I need more practice to take the balance. I hope one day I can do a web portfolio which include some fancy animation to give people “WOW” feeling.
 
+### My Mockup file
+* https://huan0251.github.io/Ming-Fei_Huang-Self-Promotion%20High-Fidelity%20Digital%20Prototype.pdf
+* https://huan0251.github.io/Ming-Fei_Huang-Self-Promotion%20High-Fidelity%20Digital%20Prototype.pdf
+
 ## Assets or resources
 ### Frameworks & plugins
 * Boostrap

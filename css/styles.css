@@ -232,16 +232,68 @@ footer{
     }
 }
 
+/* ----------------------------- Home Page Style CSS End ------------------------- */
+
 /* -----------------------------About Page Style CSS Start------------------------- */
-/*  */
+
+/* Use position to avoid navbar cover on image and text */
 .container-fluid.mainnav.about{
     position: static;
 }
 
+/* Set font style and position */
 .col.about-title h1{
     text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+}
+.col.about-title{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.about-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    padding: 20px 0 20px 0;
+}
+.about-text2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
+/* Set padding and margin to make screen more balance */
+.img-fluid.about-2-img{
+    margin: 20px 0 20px 0;
+}
+.about-main{
+    padding: 20px 10px 30px 10px;
+}
+
+/* -------------- Start of About Page Tablet Style ----------------- */
+
+@media screen and (min-width: 769px){
+    /* Change font size for tablet */
+    .col.about-title h1{
+        font-size: 3rem;
+    }
+    .about-text, .about-text2{
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------- Start of About Page Desktop Style --------------- */
+@media screen and (min-width: 960px){
+    /* Change font size for tablet */
+    .col.about-title h1{
+        font-size: 5rem;
+    }
+    .about-text, .about-text2{
+        font-size: 2rem;
+    }
+}
+
+/* ----------------------------- About Page Style CSS End ------------------------- */
 
 /* ----------------------------Portfolio Page Style CSS Start----------------------- */
 
@@ -308,7 +360,7 @@ footer{
     }
 }
 
-/* ------------- Start of Home Page Desktop Style --------------- */
+/* ------------- Start of Portfolio Page Desktop Style --------------- */
 
 @media screen and (min-width: 960px){
     /* Chenge the font size to meet the media queries */
@@ -323,6 +375,7 @@ footer{
     }
 }
 
+/* --------------------------- Portfolio Page Style CSS End ----------------------- */
 
 /* --------------------------Digital Graphics Page Style CSS Start------------------ */
 .dg-banner{
@@ -336,6 +389,7 @@ footer{
     left: 0;
 }
 
+/* ------------------------ Digital Graphics Page Style CSS End -------------------- */
 
 /* -------------------------Contact Page Style CSS Start---------------------------- */
 

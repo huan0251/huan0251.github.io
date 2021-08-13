@@ -60,46 +60,33 @@
         </div>
     </header>
     <!-- Use div to put image as backgroung to put contact form on it  -->
-    <main>
+    <main class="contact-main">
       <div class="contact-bg1">
         <img class="img-fluid" src="/images/home-1.jpg" alt="Contact background">
       </div>
-      <div class="contact-bg2">
-        <img class="img-fluid" src="/images/contact-bg.jpg" alt="Contact background">
-      </div>
       <div class="container-fluid contactform-div">
-        <h4>Please fill out the form below to request a quote for a project, inquire about a collaboration, or simply say hello. I’m also happy to refer you to someone else for a specific project need! I love to hear your story.</h4>
+        <h4 class="py-4 px-2">Please fill out the form below to request a quote for a project, inquire about a collaboration, or simply say hello. I’m also happy to refer you to someone else for a specific project need! I love to hear your story.</h4>
         <form action="#" method="get" class="contactform">
             <div class="form">
-                <div class="row">
-                    <div class="col-12">Name*</div>
+                <div class="row g-4">
                     <div class="col-6 forminput">
-                        <label for="name"></label>
+                        <label for="name">Name*</label>
                         <input type="text" placeholder="First name" aria-label="First name" id="name" name="name" required>
                     </div>
                     <div class="col-6 forminput">
                         <label for="name"></label>
                         <input type="text" placeholder="Last name" aria-label="Last name" id="name" name="name" required>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">E-mail*</div>
                     <div class="col-12 forminput">
-                        <label for="email"></label>
+                        <label for="email">E-mail*</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">Subject*</div>
                     <div class="forminput">
-                        <label for="subject"></label>
+                        <label for="subject">Subject*</label>
                         <input type="text" id="subject" name="subject" required>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">Message*</div>
                     <div class="forminput">
-                        <label for="message"></label>
+                        <label for="message">Message*</label>
                         <textarea name="message" id="message" required></textarea>
                     </div>
                 </div>

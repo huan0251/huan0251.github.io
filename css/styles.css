@@ -1,5 +1,4 @@
 /* ------------------Start of Home Page Mobile Style------------------------ */
-font-family: 'Roboto', sans-serif;
 main{
     font-family: 'Prompt', sans-serif; 
     font-size: 16px;
@@ -295,58 +294,91 @@ footer{
 
 /* -------------Contact Page Style CSS Start------------- */
 
-/* Set the input border */
+/* Set description text style */
+.container-fluid.contactform-div h4{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 200;
+    font-size: 1.125rem;
+}
+
+/* Set the input style */
 input, textarea{
     background-color: white;
     border:1px solid #F5C13D;
     border-radius: 5px;
+    width: 100%;
+    padding: 10px 0 10px 0;
 }
+::placeholder{
+    padding-left: 10px;
+    font-weight: 200;
+}
+
+/* Label text style */
+label{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+}
+
 /* Set Submit button style */
 .sbtn{
     border: none;
     background-color: #F5C13D;
     border-radius: 20px;
     padding: 10px 25px 10px 25px;
-    margin-top: 10px;
+    margin: 10px 0 30px 0;
 }
 
+/* ------------------- Start of Contact Page Mobile Style -------------------- */
 @media screen and (max-width: 768px){
+    /* Use display to hide the tablet banner image */
     .contact-bg1{
         display: none;
     }
-    .contact-bg2{
-        display: none;
-    }
 
+    /* Use display static to avoid main content flow under navbar */
     .container-fluid.mainnav.contactpage{
         position: static;
     }
-
+    
 }
 
 /* ------------------- Start of Contact Page Tablet Style -------------------- */
 
 @media screen and (min-width: 769px){
 
-    /* Use display to show the banner image and hide desktop background image */
+    /* Use display to show the banner image */
     .contact-bg1{
         display: table;
     }
-    .contact-bg2{
-        display: none;
+
+    /* Set description text style */
+    .container-fluid.contactform-div h4{
+        font-size: 1.5rem;
     }
+
+    .container-fluid.contactform-div{
+        padding: 30px;
+    }
+
 }
 
 /* ------------------- Start of Contact Page Desktop Style -------------------- */
 
 @media screen and (min-width: 960px){
 
-    /* Use display to hide tablet images and show desktop background image */
+    /* Use display to hide tablet images */
     .contact-bg1{
         display: none;
     }
-    .contact-bg2{
-        display: table;
+    
+    /* Display image as background  */
+    .contact-main{
+        background-image: url(/images/contact-bg.jpg);
+    }
+
+    .container-fluid.contactform-div{
+        
     }
 
     

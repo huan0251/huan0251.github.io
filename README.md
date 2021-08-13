@@ -18,7 +18,7 @@ Fortunately, I encounter the problem from midterm project, and now I know how to
 
 ## Assets or resources
 ### Frameworks & plugins
-Boostrap
+* Boostrap
 
 ### Fonts & Icons
 * Google fonts: https://fonts.google.com/ 

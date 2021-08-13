@@ -1,4 +1,4 @@
-/* ------------------Start of Home Page Mobile Style------------------------ */
+/* -------------------------Start of Home Page Mobile Style--------------------------- */
 main{
     font-family: 'Prompt', sans-serif; 
     font-size: 16px;
@@ -137,9 +137,9 @@ footer{
     }
 }
 
-/* ------------------End of Home Page Mobile Style------------------------ */
+/* ---------------End of Home Page Mobile Style------------------ */
 
-/* ------------------- Start of Home Page Tablet Style -------------------- */
+/* -------------- Start of Home Page Tablet Style ----------------- */
 
 @media screen and (min-width: 769px){
     
@@ -208,7 +208,7 @@ footer{
     }
 }
 
-/* ------------------- Start of Home Page Desktop Style -------------------- */
+/* ------------- Start of Home Page Desktop Style --------------- */
 @media screen and (min-width: 960px){
     
     /* Change font size for Desktop */
@@ -232,7 +232,7 @@ footer{
     }
 }
 
-/* ------------About Page Style CSS Start------------- */
+/* -----------------------------About Page Style CSS Start------------------------- */
 /*  */
 .container-fluid.mainnav.about{
     position: static;
@@ -243,9 +243,10 @@ footer{
 }
 
 
-/* -------------Portfolio Page Style CSS Start------------- */
+/* ----------------------------Portfolio Page Style CSS Start----------------------- */
 
 /* Use position to make main contents' related text on specified images */
+/* Use linear-gradient to make horizontal gradients to show the text more clearly */
 .dg{
     position: relative;
 }
@@ -255,6 +256,10 @@ footer{
     width: 100%;
     top: 45%;
     left: 0;
+    
+    padding-right: 10%;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
 }
 
 .wd{
@@ -266,6 +271,11 @@ footer{
     width: 100%;
     top: 40%;
     left: 0;
+
+    padding-left: 10%;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    color: white;
 }
 
 .ux{
@@ -277,9 +287,44 @@ footer{
     width: 100%;
     top: 40%;
     left: 0;
+
+    padding-right: 10%;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
 }
 
-/* -------------Digital Graphics Page Style CSS Start------------- */
+/* -------------- Start of Portfolio Page Tablet Style ----------------- */
+
+@media screen and (min-width: 769px){
+    /* Chenge the font size to meet the media queries */
+    .dg-title{
+        font-size: 2.75rem;
+    }
+    .wd-title{
+        font-size: 2.75rem;
+    }
+    .ux-title{
+        font-size: 2.75rem;
+    }
+}
+
+/* ------------- Start of Home Page Desktop Style --------------- */
+
+@media screen and (min-width: 960px){
+    /* Chenge the font size to meet the media queries */
+    .dg-title{
+        font-size: 3.5rem;
+    }
+    .wd-title{
+        font-size: 3.5rem;
+    }
+    .ux-title{
+        font-size: 3.5rem;
+    }
+}
+
+
+/* --------------------------Digital Graphics Page Style CSS Start------------------ */
 .dg-banner{
     position: relative;
 }
@@ -292,7 +337,7 @@ footer{
 }
 
 
-/* -------------Contact Page Style CSS Start------------- */
+/* -------------------------Contact Page Style CSS Start---------------------------- */
 
 /* Set description text style */
 .container-fluid.contactform-div h4{

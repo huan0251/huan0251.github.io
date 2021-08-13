@@ -21,7 +21,6 @@ main{
 }
 
 /* Use position to make main contents' related text and button on specified images */
-
 .header-home h1{
     position: absolute;
     text-align: center;
@@ -65,7 +64,6 @@ main{
     font-size: 1.125rem;
 }
 
-
 .home-contact {
     position: relative;
 }
@@ -101,9 +99,7 @@ main{
 /* Set the animation effect of about me button and contact button */
 .abtn:hover, .cbtn:hover{
     color: #F5C13D;
-    
 }
-
 
 /* Set main contents' portfolio button style */
 .pbtn{
